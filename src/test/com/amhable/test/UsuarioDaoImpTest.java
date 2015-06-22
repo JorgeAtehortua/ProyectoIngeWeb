@@ -6,6 +6,7 @@ import static org.junit.Assert.fail;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
@@ -52,6 +53,7 @@ public class UsuarioDaoImpTest {
 			assertTrue(true);
 			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 	}
@@ -61,9 +63,10 @@ public class UsuarioDaoImpTest {
 	 * 
 	 */
 	@Test
+	@Rollback(false)
 	public void testGuardar() {
 		UsuarioDto usuario=new UsuarioDto();
-		usuario.setIdUsuario("luis carlos");
+		usuario.setIdUsuario("luis carlos2");
 		usuario.setContrasena("123456");
 		
 		try{
@@ -73,6 +76,7 @@ public class UsuarioDaoImpTest {
 			assertTrue(true);
 			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 	}
@@ -96,6 +100,7 @@ public class UsuarioDaoImpTest {
 			assertTrue(true);
 			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 	}

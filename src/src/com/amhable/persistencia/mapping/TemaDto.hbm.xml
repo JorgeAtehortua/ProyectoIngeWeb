@@ -12,16 +12,12 @@
 				<!--Hasta aqui se mapeo la clave primaria-->
 		</id>
 		
-<!-- 		<many-to-one name="categoria" class="com.amhable.dominio.CategoriaDto" fetch="select"> -->
-<!--             <column name="Categoria_idCategoria" not-null="true" /> -->
-<!--         </many-to-one> -->
+		<many-to-one name="categoria" class="com.amhable.dominio.CategoriaDto" fetch="select">
+            <column name="Categoria_idCategoria" not-null="true" />
+        </many-to-one>
 		<property name="nombre" type="java.lang.String">
 			<column name="NOMBRE" length="45" not-null="true"/>
 		</property>
 		
-		<property name="categoria" type="java.lang.Integer">
-			<column name="Categoria_idCategoria"  not-null="true"/>
-		</property>
-				
-	</class>
+		</class>
 </hibernate-mapping>
