@@ -1,12 +1,11 @@
 package com.amhable.dominio;
 /**
- * 
- * @author luisa
- * 
- *Clase dto para los datos de tema
+ * Clase dto para los datos de tema
  *
  *Un archivo se puede clasificar por categorias 
  *y por cada categoria por tema
+ * @author luisa
+ * 
  */
 public class TemaDto {
 	/**
@@ -20,7 +19,19 @@ public class TemaDto {
 	/**
 	 * Identificador de la categoria a la que pertenece el tema
 	 */
-	private int categoria_idCategoria;
+	private int categoria;
+	/**
+	 * @return the categoria
+	 */
+	public int getCategoria() {
+		return categoria;
+	}
+	/**
+	 * @param categoria the categoria to set
+	 */
+	public void setCategoria(int categoria) {
+		this.categoria = categoria;
+	}
 	/**
 	 * @return the idTema
 	 */
@@ -45,19 +56,7 @@ public class TemaDto {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	/**
-	 * @return the categoria_idCategoria
-	 */
-	public int getCategoria_idCategoria() {
-		return categoria_idCategoria;
-	}
-	/**
-	 * @param categoria_idCategoria the categoria_idCategoria to set
-	 */
-	public void setCategoria_idCategoria(int categoria_idCategoria) {
-		this.categoria_idCategoria = categoria_idCategoria;
-	}
-	
+
 	
 
 }

@@ -110,12 +110,13 @@ public class CategoriaDaoImpTest {
 	@Test
 	public void testActualizar() {
 		CategoriaDto categoria=new CategoriaDto();
-		categoria.setIdCategoria(3);
+		categoria.setIdCategoria(1);
 		categoria.setNombre("EjemploActualizado");
 		
 		try{
 			//Prueba para Actualizar
-			categoriaDao.obtenerCategoria(1);
+			categoriaDao.actualizar(categoria);
+			System.out.println("Categoria actualizada exitosamente: " + categoria.getNombre()); 
 			assertTrue(true);
 		}catch(MyException e){
 			fail(e.getMessage());
@@ -130,11 +131,13 @@ public class CategoriaDaoImpTest {
 	@Test
 	public void testEliminar() {
 		CategoriaDto categoria=new CategoriaDto();
-		categoria.setIdCategoria(3);
 		categoria.setNombre("EjemploActualizado");
 		try{
-			//Prueba para Eliminar
+			
+				//Prueba para Eliminar
+				categoria=categoriaDao.obtenerCategoria(100);
 				categoriaDao.eliminar(categoria);
+				System.out.println("Categoria eliminada exitosamente: " + categoria.getNombre()); 
 				assertTrue(true);
 		}catch(MyException e){
 			fail(e.getMessage());
