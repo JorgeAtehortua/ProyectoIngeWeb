@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-sep-2014 17:27:11 by Hibernate Tools 3.4.0.CR1 -->
+
+<hibernate-mapping>
+	<class name="com.amhable.dominio.TemaDto" table="tema" >
+		<id name="idTema" type="java.lang.Integer" >
+			<column name="idTema"/>	
+				<!--Para saber como se genera la clave primaria -->
+			
+				<!--Hasta aqui se mapeo la clave primaria-->
+		</id>
+		<property name="nombre" type="java.lang.String">
+			<column name="NOMBRE"/>
+		</property>
+		<!--Hace referencia a una atributo de la BD que no es la clave primaria -->
+		
+		<many-to-one name="categoria_idCategoria" class="com.amhable.dominio.CategoriaDto" fetch="join">
+            <column name="CATEGORIA_IDCATEGORIA" length="60" not-null="true" />
+        </many-to-one>
+		
+	</class>
+</hibernate-mapping>

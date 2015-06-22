@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+                http://www.springframework.org/schema/context
+                http://www.springframework.org/schema/context/spring-context-3.2.xsd
+                http://www.springframework.org/schema/tx
+                http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
+
+	<bean id="DataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/bdamhable"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value=""></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<!-- inyecta un objeto creado previamente que nos proveera las conexiones -->
+		<property name="DataSource" ref="DataSource"></property>
+
+		<!-- mapea los recursos disponibles en los dao's -->
+		<property name="mappingResources">
+			<list>
+				<value>com/amhable/persistencia/mapping/ArchivoDto.hbm.xml</value>
+				<value>com/amhable/persistencia/mapping/CategoriaDto.hbm.xml</value>
+				<value>com/amhable/persistencia/mapping/TemaDto.hbm.xml</value>
+				<value>com/amhable/persistencia/mapping/UsuarioDto.hbm.xml</value>
+			</list>
+		</property>
+
+		<!-- propiedades para hibernate -->
+
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialec">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="javax.persistence.validation.mode">none</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="DataSource" ref="DataSource"></property>
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="archivoDao" class="com.amhable.persistencia.implementacion.ArchivoDaoImp">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="categoriaDao" class="com.amhable.persistencia.implementacion.CategoriaDaoImp">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="temaDao" class="com.amhable.persistencia.implementacion.TemaDaoImp">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="usuarioDao" class="com.amhable.persistencia.implementacion.UsuarioDaoImp">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<!-- Test Beans 
+	<bean id ="archivoDaoImpTest" class="com.amhable.test.ArchivoDaoImpTest">
+		<property name="archivoDao" ref="archivoDao"/>
+	</bean>
+	-->
+	
+</beans>

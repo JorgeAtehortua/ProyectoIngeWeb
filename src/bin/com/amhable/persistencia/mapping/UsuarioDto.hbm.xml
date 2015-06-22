@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-sep-2014 17:27:11 by Hibernate Tools 3.4.0.CR1 -->
+
+<hibernate-mapping>
+	<class name="com.amhable.dominio.UsuarioDto" table="usuario" >
+		<id name="idUsuario" type="java.lang.String" >
+			<column name="IDUSUARIO"/>	
+				<!--Hasta aqui se mapeo la clave primaria-->
+		</id>
+		
+		<property name="contrasena" type="java.lang.String">
+			<column name="CONTRASENA"/>
+		</property>
+	</class>
+</hibernate-mapping>

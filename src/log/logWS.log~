@@ -1,0 +1,935 @@
+2015/06/20 -- 11:30:43-[main]-[INFO]-org.springframework.beans.factory.xml.XmlBeanDefinitionReader-[loadBeanDefinitions]-(315)-Loading XML bean definitions from class path resource [SpringConfiguration.xml]
+2015/06/20 -- 11:30:43-[main]-[INFO]-org.springframework.context.support.GenericApplicationContext-[prepareRefresh]-(510)-Refreshing org.springframework.context.support.GenericApplicationContext@1e643faf: startup date [Sat Jun 20 11:30:43 COT 2015]; root of context hierarchy
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.beans.factory.support.DefaultListableBeanFactory-[preInstantiateSingletons]-(577)-Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@59e5ddf: defining beans [DataSource,sessionFactory,transactionManager,archivoDao,categoriaDao,temaDao,usuarioDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.jdbc.datasource.DriverManagerDataSource-[setDriverClassName]-(153)-Loaded JDBC driver: com.mysql.jdbc.Driver
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.annotations.common.Version-[<clinit>]-(37)-Hibernate Commons Annotations 3.2.0.Final
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(603)-Hibernate 3.6.10.Final
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(636)-hibernate.properties not found
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.Environment-[buildBytecodeProvider]-(814)-Bytecode provider name : javassist
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(695)-using JDK 1.4 java.sql.Timestamp handling
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[afterPropertiesSet]-(795)-Building new Hibernate SessionFactory
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.ArchivoDto -> archivo
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.CategoriaDto -> categoria
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.TemaDto -> tema
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.UsuarioDto -> usuario
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.Configuration-[applyHibernateValidatorLegacyConstraintsOnDDL]-(1676)-Hibernate Validator not found: ignoring
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.search.HibernateSearchEventListenerRegister-[enableHibernateSearch]-(75)-Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.connection.ConnectionProviderFactory-[initializeConnectionProviderFromConfig]-(173)-Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(233)-SQL Error: 0, SQLState: 08S01
+2015/06/20 -- 11:30:44-[main]-[ERROR]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(234)-Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(147)-Could not obtain connection to query metadata
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2408)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2445)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:173)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:164)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:149)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:119)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:113)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2863)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1870)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:871)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1463)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:587)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:106)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:57)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:33)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:313)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.net.ConnectException: Conexión rehusada
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 67 more
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.beans.factory.support.DefaultListableBeanFactory-[destroySingletons]-(434)-Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@59e5ddf: defining beans [DataSource,sessionFactory,transactionManager,archivoDao,categoriaDao,temaDao,usuarioDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015/06/20 -- 11:30:44-[main]-[ERROR]-org.springframework.test.context.TestContextManager-[prepareTestInstance]-(315)-Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@659499f1] to prepare test instance [com.amhable.test.UsuarioDaoImpTest@51e69659]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:313)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [SpringConfiguration.xml]: Invocation of init method failed; nested exception is org.hibernate.HibernateException: 'hibernate.dialect' must be set when no Connection available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:587)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:106)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:57)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:33)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 24 more
+Caused by: org.hibernate.HibernateException: 'hibernate.dialect' must be set when no Connection available
+	at org.hibernate.dialect.resolver.DialectFactory.buildDialect(DialectFactory.java:106)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:148)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2863)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1870)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:871)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1463)
+	... 40 more
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.beans.factory.xml.XmlBeanDefinitionReader-[loadBeanDefinitions]-(315)-Loading XML bean definitions from class path resource [SpringConfiguration.xml]
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.context.support.GenericApplicationContext-[prepareRefresh]-(510)-Refreshing org.springframework.context.support.GenericApplicationContext@55634720: startup date [Sat Jun 20 11:30:44 COT 2015]; root of context hierarchy
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.beans.factory.support.DefaultListableBeanFactory-[preInstantiateSingletons]-(577)-Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@73e9cf30: defining beans [DataSource,sessionFactory,transactionManager,archivoDao,categoriaDao,temaDao,usuarioDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.jdbc.datasource.DriverManagerDataSource-[setDriverClassName]-(153)-Loaded JDBC driver: com.mysql.jdbc.Driver
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[afterPropertiesSet]-(795)-Building new Hibernate SessionFactory
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.ArchivoDto -> archivo
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.CategoriaDto -> categoria
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.TemaDto -> tema
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.UsuarioDto -> usuario
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.Configuration-[applyHibernateValidatorLegacyConstraintsOnDDL]-(1676)-Hibernate Validator not found: ignoring
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.search.HibernateSearchEventListenerRegister-[enableHibernateSearch]-(75)-Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.connection.ConnectionProviderFactory-[initializeConnectionProviderFromConfig]-(173)-Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(233)-SQL Error: 0, SQLState: 08S01
+2015/06/20 -- 11:30:44-[main]-[ERROR]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(234)-Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(147)-Could not obtain connection to query metadata
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2408)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2445)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:173)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:164)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:149)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:119)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:113)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2863)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1870)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:871)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1463)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:587)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:106)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:57)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:33)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:313)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.net.ConnectException: Conexión rehusada
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 67 more
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.beans.factory.support.DefaultListableBeanFactory-[destroySingletons]-(434)-Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@73e9cf30: defining beans [DataSource,sessionFactory,transactionManager,archivoDao,categoriaDao,temaDao,usuarioDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015/06/20 -- 11:30:44-[main]-[ERROR]-org.springframework.test.context.TestContextManager-[prepareTestInstance]-(315)-Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@659499f1] to prepare test instance [com.amhable.test.UsuarioDaoImpTest@1e0b4072]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:313)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [SpringConfiguration.xml]: Invocation of init method failed; nested exception is org.hibernate.HibernateException: 'hibernate.dialect' must be set when no Connection available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:587)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:106)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:57)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:33)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 24 more
+Caused by: org.hibernate.HibernateException: 'hibernate.dialect' must be set when no Connection available
+	at org.hibernate.dialect.resolver.DialectFactory.buildDialect(DialectFactory.java:106)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:148)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2863)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1870)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:871)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1463)
+	... 40 more
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.beans.factory.xml.XmlBeanDefinitionReader-[loadBeanDefinitions]-(315)-Loading XML bean definitions from class path resource [SpringConfiguration.xml]
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.context.support.GenericApplicationContext-[prepareRefresh]-(510)-Refreshing org.springframework.context.support.GenericApplicationContext@f09733f: startup date [Sat Jun 20 11:30:44 COT 2015]; root of context hierarchy
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.beans.factory.support.DefaultListableBeanFactory-[preInstantiateSingletons]-(577)-Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d86a6f: defining beans [DataSource,sessionFactory,transactionManager,archivoDao,categoriaDao,temaDao,usuarioDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.jdbc.datasource.DriverManagerDataSource-[setDriverClassName]-(153)-Loaded JDBC driver: com.mysql.jdbc.Driver
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[afterPropertiesSet]-(795)-Building new Hibernate SessionFactory
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.ArchivoDto -> archivo
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.CategoriaDto -> categoria
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.TemaDto -> tema
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.UsuarioDto -> usuario
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.Configuration-[applyHibernateValidatorLegacyConstraintsOnDDL]-(1676)-Hibernate Validator not found: ignoring
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.cfg.search.HibernateSearchEventListenerRegister-[enableHibernateSearch]-(75)-Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.hibernate.connection.ConnectionProviderFactory-[initializeConnectionProviderFromConfig]-(173)-Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(233)-SQL Error: 0, SQLState: 08S01
+2015/06/20 -- 11:30:44-[main]-[ERROR]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(234)-Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2015/06/20 -- 11:30:44-[main]-[WARN]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(147)-Could not obtain connection to query metadata
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1117)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:350)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2408)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2445)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2230)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:813)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:334)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:208)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:173)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:164)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:149)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:119)
+	at org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider.getConnection(LocalDataSourceConnectionProvider.java:81)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:113)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2863)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1870)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:871)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1463)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:587)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:106)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:57)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:33)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:313)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.net.ConnectException: Conexión rehusada
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:259)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 67 more
+2015/06/20 -- 11:30:44-[main]-[INFO]-org.springframework.beans.factory.support.DefaultListableBeanFactory-[destroySingletons]-(434)-Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@d86a6f: defining beans [DataSource,sessionFactory,transactionManager,archivoDao,categoriaDao,temaDao,usuarioDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015/06/20 -- 11:30:44-[main]-[ERROR]-org.springframework.test.context.TestContextManager-[prepareTestInstance]-(315)-Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@659499f1] to prepare test instance [com.amhable.test.UsuarioDaoImpTest@2cf3d63b]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:313)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in class path resource [SpringConfiguration.xml]: Invocation of init method failed; nested exception is org.hibernate.HibernateException: 'hibernate.dialect' must be set when no Connection available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:587)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:106)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:57)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:33)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 24 more
+Caused by: org.hibernate.HibernateException: 'hibernate.dialect' must be set when no Connection available
+	at org.hibernate.dialect.resolver.DialectFactory.buildDialect(DialectFactory.java:106)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:148)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2863)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2859)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1870)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:871)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1525)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1463)
+	... 40 more
+2015/06/20 -- 11:44:41-[main]-[INFO]-org.springframework.beans.factory.xml.XmlBeanDefinitionReader-[loadBeanDefinitions]-(315)-Loading XML bean definitions from class path resource [SpringConfiguration.xml]
+2015/06/20 -- 11:44:41-[main]-[INFO]-org.springframework.context.support.GenericApplicationContext-[prepareRefresh]-(510)-Refreshing org.springframework.context.support.GenericApplicationContext@1e643faf: startup date [Sat Jun 20 11:44:41 COT 2015]; root of context hierarchy
+2015/06/20 -- 11:44:41-[main]-[INFO]-org.springframework.beans.factory.support.DefaultListableBeanFactory-[preInstantiateSingletons]-(577)-Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@59e5ddf: defining beans [DataSource,sessionFactory,transactionManager,archivoDao,categoriaDao,temaDao,usuarioDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015/06/20 -- 11:44:41-[main]-[INFO]-org.springframework.jdbc.datasource.DriverManagerDataSource-[setDriverClassName]-(153)-Loaded JDBC driver: com.mysql.jdbc.Driver
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.annotations.common.Version-[<clinit>]-(37)-Hibernate Commons Annotations 3.2.0.Final
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(603)-Hibernate 3.6.10.Final
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(636)-hibernate.properties not found
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.Environment-[buildBytecodeProvider]-(814)-Bytecode provider name : javassist
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(695)-using JDK 1.4 java.sql.Timestamp handling
+2015/06/20 -- 11:44:42-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:44:42-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:44:42-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:44:42-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[afterPropertiesSet]-(795)-Building new Hibernate SessionFactory
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.ArchivoDto -> archivo
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.CategoriaDto -> categoria
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.TemaDto -> tema
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.UsuarioDto -> usuario
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.Configuration-[applyHibernateValidatorLegacyConstraintsOnDDL]-(1676)-Hibernate Validator not found: ignoring
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.search.HibernateSearchEventListenerRegister-[enableHibernateSearch]-(75)-Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.connection.ConnectionProviderFactory-[initializeConnectionProviderFromConfig]-(173)-Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.dialect.Dialect-[<init>]-(136)-Using dialect: org.hibernate.dialect.MySQLDialect
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(126)-Database ->
+       name : MySQL
+    version : 5.6.21
+      major : 5
+      minor : 6
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(132)-Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.transaction.TransactionFactoryFactory-[buildTransactionFactory]-(62)-Using default transaction strategy (direct JDBC transactions)
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.transaction.TransactionManagerLookupFactory-[getTransactionManagerLookup]-(83)-No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(179)-Automatic flush during beforeCompletion(): disabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(183)-Automatic session close at end of transaction: disabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(190)-JDBC batch size: 15
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(193)-JDBC batch updates for versioned data: disabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(198)-Scrollable result sets: enabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(206)-JDBC3 getGeneratedKeys(): enabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(214)-Connection release mode: on_close
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(238)-Maximum outer join fetch depth: 2
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(241)-Default batch fetch size: 1
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(245)-Generate SQL with comments: disabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(249)-Order SQL updates by primary key: disabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(253)-Order SQL inserts for batching: disabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createQueryTranslatorFactory]-(431)-Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.hql.ast.ASTQueryTranslatorFactory-[<init>]-(47)-Using ASTQueryTranslatorFactory
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(261)-Query language substitutions: {}
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(266)-JPA-QL strict compliance: disabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(271)-Second-level cache: enabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(275)-Query cache: disabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createRegionFactory]-(406)-Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(285)-Optimize cache for minimal puts: disabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(294)-Structured second-level cache entries: disabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(314)-Echoing all SQL to stdout
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(323)-Statistics: disabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(327)-Deleted entity synthetic identifier rollback: disabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(343)-Default entity-mode: pojo
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(347)-Named query checking : enabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(351)-Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[<init>]-(202)-building session factory
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@54422e18
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@117159c0
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [blob] overrides previous : org.hibernate.type.BlobType@3e27ba32
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@3e27ba32
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@7ef82753
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [clob] overrides previous : org.hibernate.type.ClobType@3b0fe47a
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@3b0fe47a
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@202b0582
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@235ecd9f
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.impl.SessionFactoryObjectFactory-[addInstance]-(105)-Not binding factory to JNDI, no JNDI name configured
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.springframework.test.context.transaction.TransactionalTestExecutionListener-[startNewTransaction]-(277)-Began transaction (1): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@4f6f416f]; rollback [true]
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.springframework.beans.factory.xml.XmlBeanDefinitionReader-[loadBeanDefinitions]-(315)-Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.springframework.jdbc.support.SQLErrorCodesFactory-[<init>]-(126)-SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
+2015/06/20 -- 11:44:42-[main]-[WARN]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(233)-SQL Error: 1146, SQLState: 42S02
+2015/06/20 -- 11:44:42-[main]-[ERROR]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(234)-Table 'bdamhable.usuario' doesn't exist
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.event.def.DefaultLoadEventListener-[onLoad]-(160)-Error performing load command
+org.hibernate.exception.SQLGrammarException: could not load an entity: [com.amhable.dominio.UsuarioDto#luis carlos]
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:92)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.loader.Loader.loadEntity(Loader.java:2041)
+	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:86)
+	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:76)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3294)
+	at org.hibernate.event.def.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:496)
+	at org.hibernate.event.def.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:477)
+	at org.hibernate.event.def.DefaultLoadEventListener.load(DefaultLoadEventListener.java:227)
+	at org.hibernate.event.def.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:285)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:152)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:1090)
+	at org.hibernate.impl.SessionImpl.get(SessionImpl.java:1005)
+	at org.hibernate.impl.SessionImpl.get(SessionImpl.java:998)
+	at com.amhable.persistencia.implementacion.UsuarioDaoImp.obtenerUsuario(UsuarioDaoImp.java:39)
+	at com.amhable.test.UsuarioDaoImpTest.testActualizar(UsuarioDaoImpTest.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'bdamhable.usuario' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2322)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:208)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1953)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:802)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:274)
+	at org.hibernate.loader.Loader.loadEntity(Loader.java:2037)
+	... 41 more
+2015/06/20 -- 11:44:42-[main]-[ERROR]-com.amhable.persistencia.implementacion.UsuarioDaoImp-[obtenerUsuario]-(42)-ERROR obteniendo usuario: 
+org.hibernate.exception.SQLGrammarException: could not load an entity: [com.amhable.dominio.UsuarioDto#luis carlos]
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:92)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.loader.Loader.loadEntity(Loader.java:2041)
+	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:86)
+	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:76)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3294)
+	at org.hibernate.event.def.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:496)
+	at org.hibernate.event.def.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:477)
+	at org.hibernate.event.def.DefaultLoadEventListener.load(DefaultLoadEventListener.java:227)
+	at org.hibernate.event.def.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:285)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:152)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:1090)
+	at org.hibernate.impl.SessionImpl.get(SessionImpl.java:1005)
+	at org.hibernate.impl.SessionImpl.get(SessionImpl.java:998)
+	at com.amhable.persistencia.implementacion.UsuarioDaoImp.obtenerUsuario(UsuarioDaoImp.java:39)
+	at com.amhable.test.UsuarioDaoImpTest.testActualizar(UsuarioDaoImpTest.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'bdamhable.usuario' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2322)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:208)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1953)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:802)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:274)
+	at org.hibernate.loader.Loader.loadEntity(Loader.java:2037)
+	... 41 more
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.springframework.test.context.transaction.TransactionalTestExecutionListener-[endTransaction]-(297)-Rolled back transaction after test execution for test context [TestContext@1fb669c3 testClass = UsuarioDaoImpTest, testInstance = com.amhable.test.UsuarioDaoImpTest@49c66ade, testMethod = testActualizar@UsuarioDaoImpTest, testException = java.lang.AssertionError, mergedContextConfiguration = [MergedContextConfiguration@6239aba6 testClass = UsuarioDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.springframework.test.context.transaction.TransactionalTestExecutionListener-[startNewTransaction]-(277)-Began transaction (2): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@4f6f416f]; rollback [true]
+2015/06/20 -- 11:44:42-[main]-[WARN]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(233)-SQL Error: 1146, SQLState: 42S02
+2015/06/20 -- 11:44:42-[main]-[ERROR]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(234)-Table 'bdamhable.usuario' doesn't exist
+2015/06/20 -- 11:44:42-[main]-[ERROR]-com.amhable.persistencia.implementacion.UsuarioDaoImp-[guardar]-(68)-ERROR guardando usuario: 
+org.hibernate.exception.SQLGrammarException: Could not execute JDBC batch update
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:92)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:275)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:268)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:184)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:321)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:51)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1216)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:383)
+	at org.hibernate.transaction.JDBCTransaction.commit(JDBCTransaction.java:133)
+	at com.amhable.persistencia.implementacion.UsuarioDaoImp.guardar(UsuarioDaoImp.java:65)
+	at com.amhable.test.UsuarioDaoImpTest.testGuardar(UsuarioDaoImpTest.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: java.sql.BatchUpdateException: Table 'bdamhable.usuario' doesn't exist
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2054)
+	at com.mysql.jdbc.PreparedStatement.executeBatch(PreparedStatement.java:1467)
+	at org.hibernate.jdbc.BatchingBatcher.doExecuteBatch(BatchingBatcher.java:70)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:268)
+	... 37 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'bdamhable.usuario' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2006)
+	... 40 more
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.springframework.test.context.transaction.TransactionalTestExecutionListener-[endTransaction]-(297)-Rolled back transaction after test execution for test context [TestContext@1fb669c3 testClass = UsuarioDaoImpTest, testInstance = com.amhable.test.UsuarioDaoImpTest@66c61024, testMethod = testGuardar@UsuarioDaoImpTest, testException = java.lang.AssertionError, mergedContextConfiguration = [MergedContextConfiguration@6239aba6 testClass = UsuarioDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.springframework.test.context.transaction.TransactionalTestExecutionListener-[startNewTransaction]-(277)-Began transaction (3): transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@4f6f416f]; rollback [true]
+2015/06/20 -- 11:44:42-[main]-[WARN]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(233)-SQL Error: 1146, SQLState: 42S02
+2015/06/20 -- 11:44:42-[main]-[ERROR]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(234)-Table 'bdamhable.usuario' doesn't exist
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.hibernate.event.def.DefaultLoadEventListener-[onLoad]-(160)-Error performing load command
+org.hibernate.exception.SQLGrammarException: could not load an entity: [com.amhable.dominio.UsuarioDto#Nelson]
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:92)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.loader.Loader.loadEntity(Loader.java:2041)
+	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:86)
+	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:76)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3294)
+	at org.hibernate.event.def.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:496)
+	at org.hibernate.event.def.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:477)
+	at org.hibernate.event.def.DefaultLoadEventListener.load(DefaultLoadEventListener.java:227)
+	at org.hibernate.event.def.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:285)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:152)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:1090)
+	at org.hibernate.impl.SessionImpl.get(SessionImpl.java:1005)
+	at org.hibernate.impl.SessionImpl.get(SessionImpl.java:998)
+	at com.amhable.persistencia.implementacion.UsuarioDaoImp.obtenerUsuario(UsuarioDaoImp.java:39)
+	at com.amhable.test.UsuarioDaoImpTest.testObtenerUsuario(UsuarioDaoImpTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'bdamhable.usuario' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2322)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:208)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1953)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:802)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:274)
+	at org.hibernate.loader.Loader.loadEntity(Loader.java:2037)
+	... 41 more
+2015/06/20 -- 11:44:42-[main]-[ERROR]-com.amhable.persistencia.implementacion.UsuarioDaoImp-[obtenerUsuario]-(42)-ERROR obteniendo usuario: 
+org.hibernate.exception.SQLGrammarException: could not load an entity: [com.amhable.dominio.UsuarioDto#Nelson]
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:92)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.loader.Loader.loadEntity(Loader.java:2041)
+	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:86)
+	at org.hibernate.loader.entity.AbstractEntityLoader.load(AbstractEntityLoader.java:76)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:3294)
+	at org.hibernate.event.def.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:496)
+	at org.hibernate.event.def.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:477)
+	at org.hibernate.event.def.DefaultLoadEventListener.load(DefaultLoadEventListener.java:227)
+	at org.hibernate.event.def.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:285)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:152)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:1090)
+	at org.hibernate.impl.SessionImpl.get(SessionImpl.java:1005)
+	at org.hibernate.impl.SessionImpl.get(SessionImpl.java:998)
+	at com.amhable.persistencia.implementacion.UsuarioDaoImp.obtenerUsuario(UsuarioDaoImp.java:39)
+	at com.amhable.test.UsuarioDaoImpTest.testObtenerUsuario(UsuarioDaoImpTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'bdamhable.usuario' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2322)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:208)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1953)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:802)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:274)
+	at org.hibernate.loader.Loader.loadEntity(Loader.java:2037)
+	... 41 more
+2015/06/20 -- 11:44:42-[main]-[INFO]-org.springframework.test.context.transaction.TransactionalTestExecutionListener-[endTransaction]-(297)-Rolled back transaction after test execution for test context [TestContext@1fb669c3 testClass = UsuarioDaoImpTest, testInstance = com.amhable.test.UsuarioDaoImpTest@1e461e41, testMethod = testObtenerUsuario@UsuarioDaoImpTest, testException = java.lang.AssertionError, mergedContextConfiguration = [MergedContextConfiguration@6239aba6 testClass = UsuarioDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]
+2015/06/20 -- 11:44:42-[Thread-0]-[INFO]-org.springframework.context.support.GenericApplicationContext-[doClose]-(1042)-Closing org.springframework.context.support.GenericApplicationContext@1e643faf: startup date [Sat Jun 20 11:44:41 COT 2015]; root of context hierarchy
+2015/06/20 -- 11:44:42-[Thread-0]-[INFO]-org.springframework.beans.factory.support.DefaultListableBeanFactory-[destroySingletons]-(434)-Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@59e5ddf: defining beans [DataSource,sessionFactory,transactionManager,archivoDao,categoriaDao,temaDao,usuarioDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015/06/20 -- 11:44:42-[Thread-0]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[destroy]-(1071)-Closing Hibernate SessionFactory
+2015/06/20 -- 11:44:42-[Thread-0]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[close]-(927)-closing
