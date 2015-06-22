@@ -86,18 +86,18 @@ public class TemaLNimp implements TemaLN{
 	 */
 	@Override
 	public void guardar(Integer idTema, String nombre,
-			Integer categoria_idCategoria) throws MyException {
+			Integer categoria) throws MyException {
 		if(idTema==null || "".equals(idTema)){
 			throw new MyException("El Identificador del tema no puede estar vacio");
 		}
 		if(nombre==null || "".equals(nombre)){
 			throw new MyException("El nombre del tema no puede estar vacio");
 		}
-		if(categoria_idCategoria==null || "".equals(categoria_idCategoria)){
+		if(categoria==null || "".equals(categoria)){
 			throw new MyException("El nombre del tema no puede estar vacio");
 		}
 		tema=new TemaDto();
-		tema.setCategoria_idCategoria(categoria_idCategoria);
+		tema.setCategoria(categoria);
 		tema.setIdTema(idTema);
 		tema.setNombre(nombre);
 		
@@ -138,18 +138,18 @@ public class TemaLNimp implements TemaLN{
 	 */
 	@Override
 	public void actualizar(Integer idTema, String nombre,
-			Integer categoria_idCategoria) throws MyException {
+			Integer categoria) throws MyException {
 		if(idTema==null || "".equals(idTema)){
 			throw new MyException("El Identificador del tema no puede estar vacio");
 		}
 		if(nombre==null || "".equals(nombre)){
 			throw new MyException("El nombre del tema no puede estar vacio");
 		}
-		if(categoria_idCategoria==null || "".equals(categoria_idCategoria)){
+		if(categoria==null || "".equals(categoria)){
 			throw new MyException("El nombre del tema no puede estar vacio");
 		}
 		tema=new TemaDto();
-		tema.setCategoria_idCategoria(categoria_idCategoria);
+		tema.setCategoria(categoria);
 		tema.setIdTema(idTema);
 		tema.setNombre(nombre);
 		

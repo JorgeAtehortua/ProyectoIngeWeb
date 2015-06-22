@@ -16,15 +16,6 @@ import com.amhable.dominio.TemaDto;
 import com.amhable.exception.MyException;
 import com.amhable.persistencia.TemaDao;
 
-//Para indicardle que correr la prueba unitaria con lo que queda entre parentesis 
-@RunWith(SpringJUnit4ClassRunner.class)
-
-//es una prueba transactional
-@Transactional
-
-//Entre comillas debe ser la ruta del archivo de configuración xml
-@ContextConfiguration(locations={"classpath:/SpringConfiguration.xml"})
-
 
 /**
  * Clase encargada de las pruebas unitarias para la clase TemaDao
@@ -33,7 +24,14 @@ import com.amhable.persistencia.TemaDao;
  *
  */
 	
-	
+//Para indicardle que correr la prueba unitaria con lo que queda entre parentesis 
+@RunWith(SpringJUnit4ClassRunner.class)
+
+//es una prueba transactional
+@Transactional
+
+//Entre comillas debe ser la ruta del archivo de configuración xml
+@ContextConfiguration(locations={"classpath:/SpringConfiguration.xml"})
 
 public class TemaDaoImpTest {
 	
@@ -93,13 +91,13 @@ public class TemaDaoImpTest {
 	public void testGuardar() {
 		tema = new TemaDto();
 		tema.setIdTema(10);
-		tema.setCategoria_idCategoria(2);
+		tema.setCategoria(2);
 		tema.setNombre("pruebaTema");
 		try{
 			//Prueba para guardar
 			 
 		temaDao.guardar(tema);
-		System.out.println("Tema guardada exitosamente: " + tema.getNombre());
+		System.out.println("Tema guardado exitosamente: " + tema.getNombre());
 		}catch(MyException e){
 			fail(e.getMessage());
 		}
@@ -113,14 +111,13 @@ public class TemaDaoImpTest {
 	
 	@Test
 	public void testActualizar() {
-		TemaDto tema=new TemaDto();
-		tema.setIdTema(1);
-		tema.setCategoria_idCategoria(2);
-		tema.setNombre("EjemploActualizado");
+		
 		
 		try{
-				 
-			 temaDao.actualizar(tema);
+			tema=temaDao.obtenerTema(1);
+			tema.setNombre("EjemploActualizado");
+			temaDao.actualizar(tema);
+			System.out.println("Tema actualizado exitosamente: " + tema.getNombre());
 			//
 			 assertTrue(true);
 		}catch(MyException e){
@@ -137,7 +134,7 @@ public class TemaDaoImpTest {
 	public void testEliminar() {
 		TemaDto tema=new TemaDto();
 		tema.setIdTema(1);
-		tema.setCategoria_idCategoria(2);
+		tema.setCategoria(2);
 		tema.setNombre("Psicologia del amor");
 	
 		
