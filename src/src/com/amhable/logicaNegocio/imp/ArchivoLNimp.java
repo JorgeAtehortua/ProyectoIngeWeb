@@ -10,6 +10,8 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import com.amhable.dominio.ArchivoDto;
+import com.amhable.dominio.CategoriaDto;
+import com.amhable.dominio.TemaDto;
 import com.amhable.exception.MyException;
 import com.amhable.logicaNegocio.ArchivoLN;
 import com.amhable.persistencia.ArchivoDao;
@@ -26,6 +28,7 @@ public class ArchivoLNimp implements ArchivoLN {
 	 * Objeto tipo ArchivoDto con el que se manejaran los datos de una categoria
 	 */
 	ArchivoDto archivo;
+	
 	
 	/**
 	 * Inyeccion del objeto ArchivoDao para poder hacer operaciones en la base de datos
@@ -149,7 +152,7 @@ public class ArchivoLNimp implements ArchivoLN {
 	 */
 	@Override
 	public void guardar(Integer idArchivo, String nombre, Date fecha, String contrasena, 
-			String rutaArchivo, Integer categoria_idCategoria, Integer tema_idTema) throws MyException {
+			String rutaArchivo, CategoriaDto categoria_idCategoria, TemaDto tema_idTema) throws MyException {
 		if(idArchivo==null || "".equals(idArchivo)){
 			throw new MyException("El Identificador del archivo no puede estar vacio");
 		}
@@ -214,7 +217,7 @@ public class ArchivoLNimp implements ArchivoLN {
 	 */
 	@Override
 	public void actualizar(Integer idArchivo, String nombre, Date fecha, String contrasena, String rutaArchivo, 
-			Integer categoria_idCategoria, Integer tema_idTema) throws MyException {
+			CategoriaDto categoria_idCategoria, TemaDto tema_idTema) throws MyException {
 		if(idArchivo==null || "".equals(idArchivo)){
 			throw new MyException("El Identificador del archivo no puede estar vacio");
 		}

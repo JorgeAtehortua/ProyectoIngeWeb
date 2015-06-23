@@ -32,6 +32,16 @@ import com.amhable.persistencia.UsuarioDao;
 
 
 public class UsuarioDaoImpTest {
+	
+	
+	/**
+	 * Objeto tipo UsuarioDto  con el que se manejaran los datos de un usuario
+	 */
+	UsuarioDto usuario;
+	
+	/**
+	 * Inyeccion de dependencias
+	 */
 	@Autowired
 	UsuarioDao usuarioDao;
 
@@ -41,17 +51,13 @@ public class UsuarioDaoImpTest {
 	 */
 	@Test
 	public void testObtenerUsuario() {
-		UsuarioDto usuario=new UsuarioDto();
-		
-			
+		usuario=null;
 		try{
-			//Prueba para obtener el usuario con idUsuario=1
 			usuario= usuarioDao.obtenerUsuario("Nelson");
 			System.out.println(usuario.getIdUsuario()+ " :" + usuario.getContrasena());
-							
 			assertTrue(true);
-			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 	}
@@ -62,17 +68,15 @@ public class UsuarioDaoImpTest {
 	 */
 	@Test
 	public void testGuardar() {
-		UsuarioDto usuario=new UsuarioDto();
-		usuario.setIdUsuario("luis carlos");
+		usuario=new UsuarioDto();
+		usuario.setIdUsuario("Usuario");
 		usuario.setContrasena("123456");
-		
 		try{
 			usuarioDao.guardar(usuario);
 			System.out.println("Usuario guarado exitosamente");
-							
 			assertTrue(true);
-			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 	}
@@ -83,19 +87,15 @@ public class UsuarioDaoImpTest {
 	 */
 	@Test
 	public void testActualizar() {
-		
-		
 		UsuarioDto usuario=new UsuarioDto();
-			
 		try{
 			usuario = usuarioDao.obtenerUsuario("Nelson");
 			usuario.setContrasena("cambiocontrasena");
 			usuarioDao.actualizar(usuario);
 			System.out.println("Usuario actualizado exitosamente");
-							
 			assertTrue(true);
-			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 	}

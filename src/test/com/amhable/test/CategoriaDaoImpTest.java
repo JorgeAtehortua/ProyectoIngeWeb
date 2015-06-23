@@ -34,24 +34,28 @@ import com.amhable.persistencia.CategoriaDao;
  */
 @Component
 public class CategoriaDaoImpTest {
-	
-	
+	/**
+	 * Objeto con el que se manejaran los datos de una categoria
+	 */
+	CategoriaDto categoria;
+	/**
+	 * Inyeccion de dependencias
+	 */
 	@Autowired 
 	CategoriaDao categoriaDao;
-	
-	
+	/**
+	 * Metodo para hacer prueba unitaria del metodo obtenerCategorias()  
+	 * 
+	 */
 	@Test
 	public void testObtener() {
 		List<CategoriaDto> categorias=null;
-		
 		try{
 			categorias= categoriaDao.obtenerCategorias();
-			
 			for(CategoriaDto categoria: categorias){
 				System.out.println("Nombre categoria:"+ categoria.getNombre());
 			}
 			assertTrue(true);
-			
 		}catch(MyException e){
 			fail(e.getMessage());
 		}
@@ -64,15 +68,12 @@ public class CategoriaDaoImpTest {
 	 */
 	@Test
 	public void testObtenerCategoria() {
-		CategoriaDto categoria=null;
-		
+		categoria=null;
 		try{
 			//Prueba para obtener el categoria
 			categoria= categoriaDao.obtenerCategoria(1);
 			System.out.println("Nombre categoria:"+ categoria.getNombre());
-							
 			assertTrue(true);
-			
 		}catch(MyException e){
 			fail(e.getMessage());
 		}
@@ -80,41 +81,34 @@ public class CategoriaDaoImpTest {
 	}
 	
 	/**
-	 * Metodo para hacer prueba unitaria del metodo guardar()  
+	 * Metodo para hacer prueba unitaria del metodo guardar
 	 * 
 	 */
 	@Test
 	public void testGuardar() {
-		CategoriaDto categoria=new CategoriaDto();
-		categoria.setIdCategoria(100);
-		categoria.setNombre("CategoriaPrueba");
-		
+		categoria=new CategoriaDto();
+		categoria.setIdCategoria(110);
+		categoria.setNombre("CategoriaPrueba2");
 		try{
-			
 			categoriaDao.guardar(categoria);
 			System.out.println("Categoria guardada exitosamente: " + categoria.getNombre()); 
-			
 			assertTrue(true);
-		 
 		}catch(MyException e){
-			
 			fail(e.getMessage());
 		}
 		
 	}
 	
 	/**
-	 * Metodo para hacer prueba unitaria del metodo actualizar() 
+	 * Metodo para hacer prueba unitaria del metodo actualizar
 	 */
 	
 	@Test
 	public void testActualizar() {
-		CategoriaDto categoria=new CategoriaDto();
+		categoria=new CategoriaDto();
 		categoria.setIdCategoria(1);
-		categoria.setNombre("EjemploActualizado");
-		
+		categoria.setNombre("Actualizado");
 		try{
-			//Prueba para Actualizar
 			categoriaDao.actualizar(categoria);
 			System.out.println("Categoria actualizada exitosamente: " + categoria.getNombre()); 
 			assertTrue(true);
@@ -125,20 +119,17 @@ public class CategoriaDaoImpTest {
 	}
 	
 	/**
-	 * Metodo para hacer prueba unitaria del metodo eliminar()  
+	 * Metodo para hacer prueba unitaria del metodo eliminar  
 	 * 
 	 */
 	@Test
 	public void testEliminar() {
-		CategoriaDto categoria=new CategoriaDto();
-		categoria.setNombre("EjemploActualizado");
+		categoria=new CategoriaDto();
 		try{
-			
-				//Prueba para Eliminar
-				categoria=categoriaDao.obtenerCategoria(100);
-				categoriaDao.eliminar(categoria);
-				System.out.println("Categoria eliminada exitosamente: " + categoria.getNombre()); 
-				assertTrue(true);
+			categoria=categoriaDao.obtenerCategoria(110);
+			categoriaDao.eliminar(categoria);
+			System.out.println("Categoria eliminada exitosamente: " + categoria.getNombre()); 
+			assertTrue(true);
 		}catch(MyException e){
 			fail(e.getMessage());
 		}

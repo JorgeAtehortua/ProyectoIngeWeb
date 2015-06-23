@@ -1,12 +1,12 @@
 package com.amhable.dominio;
 /**
- * 
- * @author luisa
- * 
- *Clase dto para los datos del Usuario
+ * Clase dto para los datos del Usuario
  *
  *Esta tabla solo es requerida para el login del administrador, 
  *pues no esta entre los requisitos que los usuarios se logueen
+ *
+ * @author luisa
+ * 
  */
 public class UsuarioDto {
 	/**
@@ -14,7 +14,7 @@ public class UsuarioDto {
 	 */
 	private String idUsuario;
 	/**
-	 * contraseña de cada usuario
+	 * contraseï¿½a de cada usuario
 	 */
 	private String contrasena;
 	/**
@@ -32,14 +32,14 @@ public class UsuarioDto {
 		this.idUsuario = idUsuario;
 	}
 	/**
-	 * Metodo para retornar la contraseña del usuario.
+	 * Metodo para retornar la contraseï¿½a del usuario.
 	 * @return the contrasena
 	 */
 	public String getContrasena() {
 		return contrasena;
 	}
 	/**
-	 * Metodo para asignar la contraseña al usuario.
+	 * Metodo para asignar la contraseï¿½a al usuario.
 	 * @param contrasena the contrasena to set
 	 */
 	public void setContrasena(String contrasena) {

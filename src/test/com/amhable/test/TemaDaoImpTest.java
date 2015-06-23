@@ -12,6 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.amhable.dominio.CategoriaDto;
 import com.amhable.dominio.TemaDto;
 import com.amhable.exception.MyException;
 import com.amhable.persistencia.TemaDao;
@@ -20,7 +21,7 @@ import com.amhable.persistencia.TemaDao;
 /**
  * Clase encargada de las pruebas unitarias para la clase TemaDao
  * 
- * @author luis
+ * @author Luisa
  *
  */
 	
@@ -34,29 +35,39 @@ import com.amhable.persistencia.TemaDao;
 @ContextConfiguration(locations={"classpath:/SpringConfiguration.xml"})
 
 public class TemaDaoImpTest {
+	/**
+	 * Objeto tipo CategoriaDto  para asignarlo a  un tema
+	 * 
+	 */
+	CategoriaDto categoria;
 	
-	@Autowired
-	TemaDao temaDao;
+	/**
+	 * Objeto con el que se manejaran los datos de tema
+	 * 
+	 */
 	private TemaDto tema;
 	
 	/**
-	 * Metodo para hacer prueba unitaria del metodo obtenerTemas() 
+	 * Inyeccion de dependencias
+	 * 
+	 */
+	@Autowired
+	TemaDao temaDao;
+	
+	/**
+	 * Metodo para hacer prueba unitaria del metodo obtenerTemas
 	 * 
 	 */
 	
 	@Test
 	public void testObtener() {
 		List<TemaDto> temas=null;
-		
 		try{
 			temas= temaDao.obtenerTemas();
-			
 			for(TemaDto tema: temas){
 				System.out.println("Nombre tema:"+ tema.getNombre());
-				
 			}
 			assertTrue(true);
-			
 		}catch(MyException e){
 			fail(e.getMessage());
 		}
@@ -68,15 +79,12 @@ public class TemaDaoImpTest {
 	 */
 	@Test
 	public void testObtenerTema() {
-		TemaDto tema=null;
-		
+		tema=null;
 		try{
 			//Prueba para obtener el tema
 			tema= temaDao.obtenerTema(1);
 			System.out.println("Nombre Tema:"+ tema.getNombre());
-							
 			assertTrue(true);
-			
 		}catch(MyException e){
 			fail(e.getMessage());
 		}
@@ -89,16 +97,18 @@ public class TemaDaoImpTest {
 	 */
 	@Test
 	public void testGuardar() {
+		categoria= new CategoriaDto();
+		categoria.setIdCategoria(5);
+		categoria.setNombre("CategoriaParaLosTemas");
 		tema = new TemaDto();
 		tema.setIdTema(10);
-		tema.setCategoria(2);
+		tema.setCategoria(categoria);
 		tema.setNombre("pruebaTema");
 		try{
-			//Prueba para guardar
-			 
-		temaDao.guardar(tema);
-		System.out.println("Tema guardado exitosamente: " + tema.getNombre());
+			temaDao.guardar(tema);
+			System.out.println("Tema guardado exitosamente: " + tema.getNombre());
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 		
@@ -111,8 +121,6 @@ public class TemaDaoImpTest {
 	
 	@Test
 	public void testActualizar() {
-		
-		
 		try{
 			tema=temaDao.obtenerTema(1);
 			tema.setNombre("EjemploActualizado");
@@ -132,17 +140,19 @@ public class TemaDaoImpTest {
 	 */
 	@Test
 	public void testEliminar() {
-		TemaDto tema=new TemaDto();
-		tema.setIdTema(1);
-		tema.setCategoria(2);
-		tema.setNombre("Psicologia del amor");
-	
-		
+		tema=new TemaDto();
+		tema.setIdTema(4);
+		categoria= new CategoriaDto();
+		categoria.setIdCategoria(5);
+		categoria.setNombre("CategoriaParaLosTemas");
+		tema.setCategoria(categoria);
+		tema.setNombre("Otro");
 		try{
-		temaDao.eliminar(tema);
-		System.out.println("Tema eliminado exitosamente: " + tema.getNombre());
-		assertTrue(true);
+			temaDao.eliminar(tema);
+			System.out.println("Tema eliminado exitosamente: " + tema.getNombre());
+			assertTrue(true);
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 		

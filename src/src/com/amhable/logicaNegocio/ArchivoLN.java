@@ -7,6 +7,8 @@ import java.util.Date;
 import java.util.List;
 
 import com.amhable.dominio.ArchivoDto;
+import com.amhable.dominio.CategoriaDto;
+import com.amhable.dominio.TemaDto;
 import com.amhable.exception.MyException;
 
 /**
@@ -69,7 +71,7 @@ public interface ArchivoLN {
 	 * @throws MyException del archivo a guardar
 	 */
 	public void guardar(Integer idArchivo, String nombre, Date fecha, String contrasena, String rutaArchivo, 
-			Integer categoria_idCategoria, Integer tema_idTema)throws MyException;
+			CategoriaDto categoria_idCategoria, TemaDto tema_idTema)throws MyException;
 	/**
 	 * Firma del metodo con el cual se eliminaran archivos de la base de datos.
 	 * 
@@ -90,6 +92,6 @@ public interface ArchivoLN {
 	 * @throws MyException del archivo a actualizar
 	 */
 	public void actualizar(Integer idArchivo, String nombre, Date fecha, String contrasena, String rutaArchivo, 
-			Integer categoria_idCategoria, Integer tema_idTema)throws MyException;
+			CategoriaDto categoria_idCategoria, TemaDto tema_idTema)throws MyException;
 
 }

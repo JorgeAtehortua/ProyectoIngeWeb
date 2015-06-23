@@ -34,11 +34,11 @@ public class ArchivoDto {
 	/**
 	 * Identificador de la categoria a la que pertenece el archivo
 	 */
-	private int categoria_idCategoria;
+	private CategoriaDto categoria_idCategoria;
 	/**
 	 * Identificador del tema al que eprtenece el archivo
 	 */
-	private int tema_idTema;
+	private TemaDto tema_idTema;
 	/**
 	 * @return the idArchivo
 	 */
@@ -58,7 +58,7 @@ public class ArchivoDto {
 		return fecha;
 	}
 	/**
-	 * @return the contraseña
+	 * @return the contraseï¿½a
 	 */
 	public String getcontrasena() {
 		return contrasena;
@@ -72,13 +72,13 @@ public class ArchivoDto {
 	/**
 	 * @return the idCategoria
 	 */
-	public int getCategoria_idCategoria() {
+	public CategoriaDto getCategoria_idCategoria() {
 		return categoria_idCategoria;
 	}
 	/**
 	 * @return the idTema
 	 */
-	public int getTema_idTema() {
+	public TemaDto getTema_idTema() {
 		return tema_idTema;
 	}
 	/**
@@ -100,7 +100,7 @@ public class ArchivoDto {
 		this.fecha = fecha;
 	}
 	/**
-	 * @param contrasena the contraseña to set
+	 * @param contrasena the contraseï¿½a to set
 	 */
 	public void setcontrasena(String contrasena) {
 		this.contrasena = contrasena;
@@ -114,13 +114,13 @@ public class ArchivoDto {
 	/**
 	 * @param idCategoria the idCategoria to set
 	 */
-	public void setCategoria_idCategoria(int idCategoria) {
+	public void setCategoria_idCategoria(CategoriaDto idCategoria) {
 		this.categoria_idCategoria = idCategoria;
 	}
 	/**
 	 * @param idTema the idTema to set
 	 */
-	public void setTema_idTema(int idTema) {
+	public void setTema_idTema(TemaDto idTema) {
 		this.tema_idTema = idTema;
 	}
 

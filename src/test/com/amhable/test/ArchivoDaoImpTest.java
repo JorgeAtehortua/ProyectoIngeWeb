@@ -8,7 +8,6 @@ import static org.junit.Assert.fail;
 import java.util.Date;
 import java.util.List;
 
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +16,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.amhable.dominio.ArchivoDto;
+import com.amhable.dominio.CategoriaDto;
+import com.amhable.dominio.TemaDto;
 import com.amhable.exception.MyException;
 import com.amhable.persistencia.ArchivoDao;
 
@@ -39,6 +40,21 @@ import com.amhable.persistencia.ArchivoDao;
 
 
 public class ArchivoDaoImpTest {
+	
+	/**
+	 * Objeto tipo CategoriaDto para asignarlo a  un archivo
+	 * 
+	 */
+	CategoriaDto categoria;
+	
+	/**
+	 * Objeto tipo TemaDto para asignarlo a  un archivo
+	 * 
+	 */
+	private TemaDto tema;
+	/**
+	 * Inyeccion de dependencias
+	 */
 	@Autowired
 	ArchivoDao archivoDao;
 
@@ -50,9 +66,7 @@ public class ArchivoDaoImpTest {
 	@Test
 	public void testObtener() {
 		List<ArchivoDto> archivos=null;
-		
 		try{
-			
 			archivos= archivoDao.obtener();
 			
 			for(ArchivoDto archivo: archivos){
@@ -62,6 +76,7 @@ public class ArchivoDaoImpTest {
 			assertTrue(true);
 			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 		
@@ -76,13 +91,13 @@ public class ArchivoDaoImpTest {
 		ArchivoDto archivo=null;
 		
 		try{
-			//Prueba para obtener el archivo con idArchivo=1
+			
 			archivo= archivoDao.obtenerArchivo(1);
 			System.out.println("Nombre archivo:"+ archivo.getNombre());
-							
 			assertTrue(true);
 			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 		
@@ -98,7 +113,6 @@ public class ArchivoDaoImpTest {
 		List<ArchivoDto> archivos=null;
 		
 		try{
-			//Prueba para obtener los archivos que pertenecen a la categoria con idCategoria=1
 			archivos= archivoDao.obtenerArchivosPorCategoria(1);
 			
 			for(ArchivoDto archivo: archivos){
@@ -108,6 +122,7 @@ public class ArchivoDaoImpTest {
 			assertTrue(true);
 			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 		
@@ -122,8 +137,6 @@ public class ArchivoDaoImpTest {
 		List<ArchivoDto> archivos=null;
 		
 		try{
-			//Prueba para obtener los archivos que pertenecen a la categoria con idCategoria=1
-			//y tema idTema=1
 			archivos= archivoDao.obtenerArchivoPorCategoriaYTema(1,1);
 			
 			for(ArchivoDto archivo: archivos){
@@ -133,6 +146,7 @@ public class ArchivoDaoImpTest {
 			assertTrue(true);
 			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 		
@@ -145,16 +159,13 @@ public class ArchivoDaoImpTest {
 	@Test
 	public void testObtenerArchivoPorNombre() {
 		ArchivoDto archivo=null;
-		
 		try{
-			//Prueba para obtener el archivo con nombre="Ejemplo"
 			archivo= archivoDao.obtenerArchivoPorNombre("Ejemplo");
-			
 			System.out.println("Nombre archivo:"+ archivo.getNombre());
-							
 			assertTrue(true);
 			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 		
@@ -167,18 +178,14 @@ public class ArchivoDaoImpTest {
 	@Test
 	public void testGuardar() {
 		ArchivoDto archivo=new ArchivoDto();
-		archivo.setIdArchivo(999);
-		archivo.setNombre("EjemploGuardar");
-		archivo.setFecha(new Date());
+	
 		
 		try{
-			
 			archivoDao.guardar(archivo);			
 			System.out.println("Archivo guardado exitosamente: " + archivo.getNombre());
-							
 			assertTrue(true);
-			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 		
@@ -203,6 +210,7 @@ public class ArchivoDaoImpTest {
 			assertTrue(true);
 			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 		
@@ -220,13 +228,11 @@ public class ArchivoDaoImpTest {
 		archivo.setFecha(new Date());
 		
 		try{
-			
 			archivoDao.actualizar(archivo);
 			System.out.println("Archivo actualizado exitosamente");
-							
 			assertTrue(true);
-			
 		}catch(MyException e){
+			e.printStackTrace();
 			fail(e.getMessage());
 		}
 		

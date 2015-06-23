@@ -5,6 +5,7 @@ package com.amhable.logicaNegocio;
 
 import java.util.List;
 
+import com.amhable.dominio.CategoriaDto;
 import com.amhable.dominio.TemaDto;
 import com.amhable.exception.MyException;
 
@@ -37,10 +38,10 @@ public interface TemaLN {
 	 * 
 	 * @param identificador del tema que se va a guardar 
 	 * @param nombre del tema que se va a guardar 
-	 * @param identificador de la categoria a la que pertenece el tema que se va a guardar 
+	 * @param la categoria a la que pertenece el tema que se va a guardar 
 	 * @throws MyException
 	 */
-	public void guardar(Integer idTema, String nombre, Integer categoria_idCategoria) throws MyException;
+	public void guardar(Integer idTema, String nombre, CategoriaDto categoria) throws MyException;
 	
 	/**
 	 * Firma del metodo eliminar
@@ -53,9 +54,9 @@ public interface TemaLN {
 	 * Firma del metodo actualizar
 	 * @param identificador del tema que se va a actualizar 
 	 * @param nombre del tema que se va a actualizar 
-	 * @param identificador de la categoria a la que pertenece el tema que se va a actualizar
+	 * @param la categoria a la que pertenece el tema que se va a actualizar
 	 * @throws MyException
 	 */
-	public void actualizar(Integer idTema, String nombre, Integer categoria_idCategoria) throws MyException;
+	public void actualizar(Integer idTema, String nombre, CategoriaDto categoria) throws MyException;
 
 }

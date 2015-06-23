@@ -19,17 +19,17 @@ public class TemaDto {
 	/**
 	 * Identificador de la categoria a la que pertenece el tema
 	 */
-	private int categoria;
+	private CategoriaDto categoria;
 	/**
 	 * @return the categoria
 	 */
-	public int getCategoria() {
+	public CategoriaDto getCategoria() {
 		return categoria;
 	}
 	/**
 	 * @param categoria the categoria to set
 	 */
-	public void setCategoria(int categoria) {
+	public void setCategoria(CategoriaDto categoria) {
 		this.categoria = categoria;
 	}
 	/**

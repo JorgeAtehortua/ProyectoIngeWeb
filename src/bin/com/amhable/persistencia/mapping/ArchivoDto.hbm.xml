@@ -5,6 +5,7 @@
 
 <hibernate-mapping>
 	<class name="com.amhable.dominio.ArchivoDto" table="archivo" >
+	
 		<id name="idArchivo" type="java.lang.Integer" >
 			<column name="idArchivo"/>	
 				<!--Para saber como se genera la clave primaria -->
@@ -12,16 +13,16 @@
 				<!--Hasta aqui se mapeo la clave primaria-->
 		</id>
 		<property name="nombre" type="java.lang.String">
-			<column name="NOMBRE"/>
+			<column name="NOMBRE" not-null="true"/>
 		</property>
 		<property name="fecha" type="java.util.Date">
-			<column name="FECHA"/>
+			<column name="FECHA" not-null="true"/>
 		</property>
 		<property name="contrasena" type="java.lang.String">
 			<column name="CONTRASENA"/>
 		</property>
 		<property name="rutaArchivo" type="java.lang.String">
-			<column name="RUTAARCHIVO"/>
+			<column name="RUTAARCHIVO" not-null="true"/>
 		</property>
 		<many-to-one name="categoria_idCategoria" class="com.amhable.dominio.CategoriaDto" fetch="select">
             <column name="CATEGORIA_IDCATEGORIA" length="60" not-null="true" />
