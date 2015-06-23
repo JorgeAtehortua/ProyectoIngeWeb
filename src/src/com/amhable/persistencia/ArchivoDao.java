@@ -3,6 +3,8 @@ package com.amhable.persistencia;
 import java.util.List;
 
 import com.amhable.dominio.ArchivoDto;
+import com.amhable.dominio.CategoriaDto;
+import com.amhable.dominio.TemaDto;
 import com.amhable.exception.MyException;
 
 /**
@@ -43,7 +45,7 @@ public interface ArchivoDao {
 	 * @return un Archivo que coincida con el parametro ingresado.
 	 * @throws MyException
 	 */
-	public List<ArchivoDto> obtenerArchivosPorCategoria(Integer idCategoria)throws MyException;
+	public List<ArchivoDto> obtenerArchivosPorCategoria(CategoriaDto categoria)throws MyException;
 	/**
 	 * Firma del metodo obtenerArchivoPorCategoriaYTema
 	 * 
@@ -52,7 +54,7 @@ public interface ArchivoDao {
 	 * @return un Archivo que coincida con los parametros ingresados.
 	 * @throws MyException
 	 */
-	public List<ArchivoDto> obtenerArchivoPorCategoriaYTema(Integer idCategoria, Integer idTema)throws MyException;
+	public List<ArchivoDto> obtenerArchivoPorCategoriaYTema(CategoriaDto categoria, TemaDto tema)throws MyException;
 	/**
 	 * Firma del metodo guardar
 	 * 

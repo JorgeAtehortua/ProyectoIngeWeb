@@ -63,6 +63,7 @@
 	<bean id="usuarioDao" class="com.amhable.persistencia.implementacion.UsuarioDaoImp">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
+	
 
 	<!-- Test Beans 
 	<bean id ="archivoDaoImpTest" class="com.amhable.test.ArchivoDaoImpTest">
