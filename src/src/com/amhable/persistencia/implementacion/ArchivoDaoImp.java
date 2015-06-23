@@ -96,6 +96,7 @@ public class ArchivoDaoImp extends HibernateDaoSupport  implements ArchivoDao{
 			Criteria criteria=session.createCriteria(ArchivoDto.class).add(Restrictions.eq("categoria.idCategoria", idCategoria));
 			archivos=criteria.list();
 		}catch(HibernateException e){
+			e.printStackTrace();
 			log.error("ERROR obteniendo lista de archivos por categoria: ", e);
 			throw new MyException(e);			
 		}finally{
@@ -123,15 +124,13 @@ public class ArchivoDaoImp extends HibernateDaoSupport  implements ArchivoDao{
 
 		try{
 			session=getSession(); 
-			Criteria criteria=session.createCriteria(ArchivoDto.class).add(Restrictions.eq("categoria.idCategoria", idCategoria)).add(Restrictions.eq("tema.idTema", idTema));
+			Criteria criteria=session.createCriteria(ArchivoDto.class).add(Restrictions.eq("Categoria_idCategoria", idCategoria)).add(Restrictions.eq("tema_idTema", idTema));
 			archivos=criteria.list();
 		}catch(HibernateException e){
 			log.error("ERROR obteniendo lista de archivos por categoria: ", e);
 			throw new MyException(e);			
 		}finally{
-//			if(session!=null){
-//				session.close();
-//			}
+
 			
 		}
 		return archivos;
@@ -176,11 +175,11 @@ public class ArchivoDaoImp extends HibernateDaoSupport  implements ArchivoDao{
 			session =getSession();
 			Transaction tx = session.beginTransaction();
 			session.save(archivo);
-			session.flush();
 			tx.commit();
 			
 		} catch(HibernateException e){
 			log.error("ERROR guardando archivo: ", e);
+			e.printStackTrace();
 			throw new MyException(e);			
 		}finally{
 //			if(session!=null){
