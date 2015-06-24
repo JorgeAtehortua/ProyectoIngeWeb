@@ -1,4 +1,9 @@
 package com.amhable.dominio;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+
 /**
  * Clase dto para los datos del Usuario
  *
@@ -8,6 +13,7 @@ package com.amhable.dominio;
  * @author luisa
  * 
  */
+@XmlRootElement
 public class UsuarioDto {
 	/**
 	 * Identificador de cada usuario

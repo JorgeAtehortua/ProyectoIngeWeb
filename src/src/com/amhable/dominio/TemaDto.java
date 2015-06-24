@@ -1,4 +1,7 @@
 package com.amhable.dominio;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Clase dto para los datos de tema
  *
@@ -7,6 +10,7 @@ package com.amhable.dominio;
  * @author luisa
  * 
  */
+@XmlRootElement
 public class TemaDto {
 	/**
 	 * Identificador del tema

@@ -4,12 +4,15 @@ package com.amhable.dominio;
 
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  *  
  * Clase dto para los datos del archivo
  * 
  * @author luisa
  */
+@XmlRootElement
 public class ArchivoDto {
 	/**
 	 * Identificador del archivo

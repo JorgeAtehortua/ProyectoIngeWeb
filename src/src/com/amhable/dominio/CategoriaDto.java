@@ -1,4 +1,7 @@
 package com.amhable.dominio;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  *Clase dto para los datos de las categorias.
  *
@@ -6,6 +9,7 @@ package com.amhable.dominio;
  * 
  * @author luisa.
  */
+@XmlRootElement
 public class CategoriaDto {
 	/**
 	 * Codigo de la categoria
