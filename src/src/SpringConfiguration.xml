@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:tx="http://www.springframework.org/schema/tx"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
@@ -65,16 +64,16 @@
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 
-	<bean id="usuarioLN" class="com.amhable.persistencia.implementacion.UsuarioLNimp">
+	<bean id="usuarioLN" class="com.amhable.logicaNegocio.imp.UsuarioLNimp">
 		<property name="usuarioDao" ref="usuarioDao" />
 	</bean>
-	<bean id="temaLN" class="com.amhable.persistencia.implementacion.TemaLNimp">
+	<bean id="temaLN" class="com.amhable.logicaNegocio.imp.TemaLNimp">
 		<property name="temaDao" ref="temaDao" />
 	</bean>
-	<bean id="categoriaLN" class="com.amhable.persistencia.implementacion.CategoriaLNimp">
+	<bean id="categoriaLN" class="com.amhable.logicaNegocio.imp.CategoriaLNimp">
 		<property name="categoriaDao" ref="categoriaDao" />
 	</bean>
-	<bean id="archivoLN" class="com.amhable.persistencia.implementacion.ArchivoLNimp">
+	<bean id="archivoLN" class="com.amhable.logicaNegocio.imp.ArchivoLNimp">
 		<property name="archivoDao" ref="archivoDao" />
 	</bean>
 
