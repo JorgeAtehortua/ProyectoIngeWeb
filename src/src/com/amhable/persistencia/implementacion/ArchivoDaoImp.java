@@ -11,6 +11,8 @@ import org.hibernate.criterion.Restrictions;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import com.amhable.dominio.ArchivoDto;
+import com.amhable.dominio.CategoriaDto;
+import com.amhable.dominio.TemaDto;
 import com.amhable.exception.MyException;
 import com.amhable.persistencia.ArchivoDao;
 
@@ -87,15 +89,16 @@ public class ArchivoDaoImp extends HibernateDaoSupport  implements ArchivoDao{
 	 * @throws MyException
 	 */
 	@SuppressWarnings("unchecked")
-	public List<ArchivoDto> obtenerArchivosPorCategoria(Integer idCategoria)throws MyException {
+	public List<ArchivoDto> obtenerArchivosPorCategoria(CategoriaDto categoria)throws MyException {
 		Session session=null;
 		List<ArchivoDto> archivos=null;
 
 		try{
 			session=getSession(); 
-			Criteria criteria=session.createCriteria(ArchivoDto.class).add(Restrictions.eq("categoria.idCategoria", idCategoria));
+			Criteria criteria=session.createCriteria(ArchivoDto.class).add(Restrictions.eq("categoria_idCategoria", categoria));
 			archivos=criteria.list();
 		}catch(HibernateException e){
+			e.printStackTrace();
 			log.error("ERROR obteniendo lista de archivos por categoria: ", e);
 			throw new MyException(e);			
 		}finally{
@@ -117,21 +120,20 @@ public class ArchivoDaoImp extends HibernateDaoSupport  implements ArchivoDao{
 	 * @throws MyException
 	 */
 	@SuppressWarnings("unchecked")
-	public List<ArchivoDto> obtenerArchivoPorCategoriaYTema(Integer idCategoria, Integer idTema) throws MyException {
+	public List<ArchivoDto> obtenerArchivoPorCategoriaYTema(CategoriaDto categoria, TemaDto tema) throws MyException {
 		Session session=null;
 		List<ArchivoDto> archivos=null;
 
 		try{
 			session=getSession(); 
-			Criteria criteria=session.createCriteria(ArchivoDto.class).add(Restrictions.eq("categoria.idCategoria", idCategoria)).add(Restrictions.eq("tema.idTema", idTema));
+			Criteria criteria=session.createCriteria(ArchivoDto.class).add(Restrictions.eq("categoria_idCategoria", categoria)).add(Restrictions.eq("tema_idTema", tema));
 			archivos=criteria.list();
 		}catch(HibernateException e){
+			e.printStackTrace();
 			log.error("ERROR obteniendo lista de archivos por categoria: ", e);
 			throw new MyException(e);			
 		}finally{
-//			if(session!=null){
-//				session.close();
-//			}
+
 			
 		}
 		return archivos;
@@ -176,11 +178,11 @@ public class ArchivoDaoImp extends HibernateDaoSupport  implements ArchivoDao{
 			session =getSession();
 			Transaction tx = session.beginTransaction();
 			session.save(archivo);
-			session.flush();
 			tx.commit();
 			
 		} catch(HibernateException e){
 			log.error("ERROR guardando archivo: ", e);
+			e.printStackTrace();
 			throw new MyException(e);			
 		}finally{
 //			if(session!=null){

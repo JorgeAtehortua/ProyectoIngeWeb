@@ -38,10 +38,10 @@ public interface TemaLN {
 	 * 
 	 * @param identificador del tema que se va a guardar 
 	 * @param nombre del tema que se va a guardar 
-	 * @param la categoria a la que pertenece el tema que se va a guardar 
+	 * @param el identificador de la categoria a la que pertenece el tema que se va a guardar 
 	 * @throws MyException
 	 */
-	public void guardar(Integer idTema, String nombre, CategoriaDto categoria) throws MyException;
+	public void guardar(Integer idTema, String nombre, Integer categoria) throws MyException;
 	
 	/**
 	 * Firma del metodo eliminar
@@ -54,9 +54,9 @@ public interface TemaLN {
 	 * Firma del metodo actualizar
 	 * @param identificador del tema que se va a actualizar 
 	 * @param nombre del tema que se va a actualizar 
-	 * @param la categoria a la que pertenece el tema que se va a actualizar
+	 * @param el identificador de la categoria a la que pertenece el tema que se va a actualizar
 	 * @throws MyException
 	 */
-	public void actualizar(Integer idTema, String nombre, CategoriaDto categoria) throws MyException;
+	public void actualizar(Integer idTema, String nombre, Integer categoria) throws MyException;
 
 }

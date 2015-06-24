@@ -111,12 +111,16 @@ public class ArchivoDaoImpTest {
 	@Test
 	public void testObtenerArchivosPorCategoria() {
 		List<ArchivoDto> archivos=null;
+		ArchivoDto archivo= new ArchivoDto();
+		categoria= new CategoriaDto();
 		
 		try{
-			archivos= archivoDao.obtenerArchivosPorCategoria(1);
+			archivo=archivoDao.obtenerArchivo(1);
+			categoria=archivo.getCategoria_idCategoria();
+			archivos= archivoDao.obtenerArchivosPorCategoria(categoria);
 			
-			for(ArchivoDto archivo: archivos){
-				System.out.println("Nombre archivo:"+ archivo.getNombre());
+			for(ArchivoDto arch: archivos){
+				System.out.println("Nombre archivo:"+ arch.getNombre());
 				
 			}
 			assertTrue(true);
@@ -135,12 +139,17 @@ public class ArchivoDaoImpTest {
 	@Test
 	public void testObtenerArchivoPorCategoriaYTema() {
 		List<ArchivoDto> archivos=null;
-		
+		ArchivoDto archivo= new ArchivoDto();
+		categoria= new CategoriaDto();
+		tema= new TemaDto();
 		try{
-			archivos= archivoDao.obtenerArchivoPorCategoriaYTema(1,1);
+			archivo=archivoDao.obtenerArchivo(1);
+			categoria=archivo.getCategoria_idCategoria();
+			tema=archivo.getTema_idTema();
+			archivos= archivoDao.obtenerArchivoPorCategoriaYTema(categoria, tema);
 			
-			for(ArchivoDto archivo: archivos){
-				System.out.println("Nombre archivo:"+ archivo.getNombre());
+			for(ArchivoDto arch: archivos){
+				System.out.println("Nombre archivo:"+ arch.getNombre());
 				
 			}
 			assertTrue(true);
@@ -156,11 +165,11 @@ public class ArchivoDaoImpTest {
 	 * Metodo para hacer prueba unitaria del metodo obtenerArchivoPorNombre(String nombre)
 	 * 
 	 */
-	@Test
+	//@Test
 	public void testObtenerArchivoPorNombre() {
 		ArchivoDto archivo=null;
 		try{
-			archivo= archivoDao.obtenerArchivoPorNombre("Ejemplo");
+			archivo= archivoDao.obtenerArchivoPorNombre("Articulo 1");
 			System.out.println("Nombre archivo:"+ archivo.getNombre());
 			assertTrue(true);
 			
@@ -178,9 +187,20 @@ public class ArchivoDaoImpTest {
 	@Test
 	public void testGuardar() {
 		ArchivoDto archivo=new ArchivoDto();
-	
-		
+		ArchivoDto archivoAux=new ArchivoDto();
+		categoria=new CategoriaDto();
+		tema= new TemaDto();
 		try{
+			archivoAux=archivoDao.obtenerArchivo(1);
+			categoria=archivoAux.getCategoria_idCategoria();
+			tema=archivoAux.getTema_idTema();
+			archivo.setCategoria_idCategoria(categoria);
+			archivo.setTema_idTema(tema);
+			archivo.setcontrasena("root");
+			archivo.setFecha(new Date());
+			archivo.setIdArchivo(302);
+			archivo.setNombre("Archivoguardado");
+			archivo.setRutaArchivo("RutaArchivo");
 			archivoDao.guardar(archivo);			
 			System.out.println("Archivo guardado exitosamente: " + archivo.getNombre());
 			assertTrue(true);
@@ -223,11 +243,12 @@ public class ArchivoDaoImpTest {
 	@Test
 	public void testActualizar() {
 		ArchivoDto archivo=new ArchivoDto();
-		archivo.setIdArchivo(999);
-		archivo.setNombre("EjemploActualizado");
-		archivo.setFecha(new Date());
+		
 		
 		try{
+			archivo=archivoDao.obtenerArchivo(2);
+			archivo.setNombre("Actualizacion");
+			archivo.setFecha(new Date());
 			archivoDao.actualizar(archivo);
 			System.out.println("Archivo actualizado exitosamente");
 			assertTrue(true);

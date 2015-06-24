@@ -32,13 +32,13 @@ public class ArchivoDto {
 	 */
 	private String rutaArchivo;
 	/**
-	 * Identificador de la categoria a la que pertenece el archivo
+	 * Categoria a la que pertenece el archivo
 	 */
-	private CategoriaDto categoria_idCategoria;
+	private CategoriaDto categoria;
 	/**
-	 * Identificador del tema al que eprtenece el archivo
+	 * Tema al que pertenece el archivo
 	 */
-	private TemaDto tema_idTema;
+	private TemaDto tema;
 	/**
 	 * @return the idArchivo
 	 */
@@ -73,13 +73,13 @@ public class ArchivoDto {
 	 * @return the idCategoria
 	 */
 	public CategoriaDto getCategoria_idCategoria() {
-		return categoria_idCategoria;
+		return categoria;
 	}
 	/**
 	 * @return the idTema
 	 */
 	public TemaDto getTema_idTema() {
-		return tema_idTema;
+		return tema;
 	}
 	/**
 	 * @param idArchivo the idArchivo to set
@@ -114,14 +114,14 @@ public class ArchivoDto {
 	/**
 	 * @param idCategoria the idCategoria to set
 	 */
-	public void setCategoria_idCategoria(CategoriaDto idCategoria) {
-		this.categoria_idCategoria = idCategoria;
+	public void setCategoria_idCategoria(CategoriaDto categoria) {
+		this.categoria = categoria;
 	}
 	/**
 	 * @param idTema the idTema to set
 	 */
-	public void setTema_idTema(TemaDto idTema) {
-		this.tema_idTema = idTema;
+	public void setTema_idTema(TemaDto tema) {
+		this.tema = tema;
 	}
 
 }

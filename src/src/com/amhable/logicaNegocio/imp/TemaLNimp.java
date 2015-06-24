@@ -89,16 +89,19 @@ public class TemaLNimp implements TemaLN{
 	 */
 	@Override
 	public void guardar(Integer idTema, String nombre,
-			CategoriaDto categoria) throws MyException {
+			Integer  idCategoria) throws MyException {
 		if(idTema==null || "".equals(idTema)){
 			throw new MyException("El Identificador del tema no puede estar vacio");
 		}
 		if(nombre==null || "".equals(nombre)){
 			throw new MyException("El nombre del tema no puede estar vacio");
 		}
-		if(categoria==null || "".equals(categoria)){
-			throw new MyException("LA categoria a la que pertenece el tema no puede estar vacio");
+		if(idCategoria==null || "".equals(idCategoria)){
+			throw new MyException("La categoria a la que pertenece el tema no puede estar vacio");
 		}
+		CategoriaDto categoria= new CategoriaDto();
+		categoria.setIdCategoria(idCategoria);
+		
 		tema=new TemaDto();
 		tema.setCategoria(categoria);
 		tema.setIdTema(idTema);
@@ -141,16 +144,18 @@ public class TemaLNimp implements TemaLN{
 	 */
 	@Override
 	public void actualizar(Integer idTema, String nombre,
-			CategoriaDto categoria) throws MyException {
+			Integer idCategoria) throws MyException {
 		if(idTema==null || "".equals(idTema)){
 			throw new MyException("El Identificador del tema no puede estar vacio");
 		}
 		if(nombre==null || "".equals(nombre)){
 			throw new MyException("El nombre del tema no puede estar vacio");
 		}
-		if(categoria==null || "".equals(categoria)){
+		if(idCategoria==null || "".equals(idCategoria)){
 			throw new MyException("La categoria a la que pertenece el tema no puede estar vacio");
 		}
+		CategoriaDto categoria= new CategoriaDto();
+		categoria.setIdCategoria(idCategoria);
 		tema=new TemaDto();
 		tema.setCategoria(categoria);
 		tema.setIdTema(idTema);

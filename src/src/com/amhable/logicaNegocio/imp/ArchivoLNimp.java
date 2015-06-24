@@ -110,11 +110,13 @@ public class ArchivoLNimp implements ArchivoLN {
 	public List<ArchivoDto> obtenerArchivosPorCategoria(Integer idCategoria)
 			throws MyException {
 		List<ArchivoDto> archivos= new ArrayList<ArchivoDto>();
+		CategoriaDto categoria= new CategoriaDto();
 		if(idCategoria==null || "".equals(idCategoria)){
 			throw new MyException("El Identificador de la categoria a la que pertenece el archivo no puede estar vacio");
 		}
+		categoria.setIdCategoria(idCategoria);
 		try{
-			archivos= archivoDao.obtenerArchivosPorCategoria(idCategoria);
+			archivos= archivoDao.obtenerArchivosPorCategoria(categoria);
 		}catch(MyException e){
 			Logger log=Logger.getLogger(this.getClass());
 			log.error("Error obteniendo archivo por categoria");
@@ -129,16 +131,21 @@ public class ArchivoLNimp implements ArchivoLN {
 	@Override
 	public List<ArchivoDto> obtenerArchivoPorCategoriaYTema(
 			Integer idCategoria, Integer idTema) throws MyException {
-		// TODO Auto-generated method stub
+		CategoriaDto categoria= new CategoriaDto();
+		TemaDto tema= new TemaDto();
+		
 		List<ArchivoDto> archivos= new ArrayList<ArchivoDto>();
 		if(idCategoria==null || "".equals(idCategoria)){
 			throw new MyException("El Identificador de la categoria a la que pertenece el archivo no puede estar vacio");
 		}
+		categoria.setIdCategoria(idCategoria);
 		if(idTema==null || "".equals(idTema)){
 			throw new MyException("El Identificador del tema a la que pertenece el archivo no puede estar vacio");
 		}
+		tema.setIdTema(idTema);
 		try{
-			archivos= archivoDao.obtenerArchivoPorCategoriaYTema(idCategoria, idTema);
+			
+			archivos= archivoDao.obtenerArchivoPorCategoriaYTema(categoria, tema);
 		}catch(MyException e){
 			Logger log=Logger.getLogger(this.getClass());
 			log.error("Error obteniendo archivo por categoria y tema");
