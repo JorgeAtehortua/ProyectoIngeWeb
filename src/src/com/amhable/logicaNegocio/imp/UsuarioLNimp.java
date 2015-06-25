@@ -78,7 +78,7 @@ public class UsuarioLNimp implements UsuarioLN{
 		usuario.setContrasena(contrasena);
 		usuario.setIdUsuario(idUsuario);
 		try{
-			usuarioDao.obtenerUsuario(idUsuario);
+			usuarioDao.guardar(usuario);
 		}catch(MyException e){
 			Logger log = Logger.getLogger(this.getClass());
 			log.error("Error guardando usuario: " + e);

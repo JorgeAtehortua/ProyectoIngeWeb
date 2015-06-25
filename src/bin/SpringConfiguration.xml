@@ -69,12 +69,15 @@
 	</bean>
 	<bean id="temaLN" class="com.amhable.logicaNegocio.imp.TemaLNimp">
 		<property name="temaDao" ref="temaDao" />
+		<property name="categoriaDao" ref="categoriaDao" />
 	</bean>
 	<bean id="categoriaLN" class="com.amhable.logicaNegocio.imp.CategoriaLNimp">
 		<property name="categoriaDao" ref="categoriaDao" />
 	</bean>
 	<bean id="archivoLN" class="com.amhable.logicaNegocio.imp.ArchivoLNimp">
 		<property name="archivoDao" ref="archivoDao" />
+		<property name="temaDao" ref="temaDao" />
+		<property name="categoriaDao" ref="categoriaDao" />
 	</bean>
 
 	<context:component-scan base-package="com.amhable.ws"></context:component-scan>
@@ -82,7 +85,7 @@
 	<bean id="usuarioWs" class="com.amhable.ws.UsuarioWs">
 		<property name="usuarioLN" ref="usuarioLN" />
 	</bean>
-	<!-- <bean id="categoriaWs" class="com.amhable.ws.CategoriaWs">
+	<bean id="categoriaWs" class="com.amhable.ws.CategoriaWs">
 		<property name="categoriaLN" ref="categoriaLN" />
 	</bean>
 	<bean id="temaWs" class="com.amhable.ws.TemaWs">
@@ -90,5 +93,5 @@
 	</bean>
 	<bean id="archivoWs" class="com.amhable.ws.ArchivoWs">
 		<property name="archivoLN" ref="archivoLN" />
-	</bean> -->
+	</bean>
 </beans>

@@ -146,7 +146,7 @@ public class TemaDaoImpTest {
 		categoria.setIdCategoria(5);
 		categoria.setNombre("CategoriaParaLosTemas");
 		tema.setCategoria(categoria);
-		tema.setNombre("Otro");
+		tema.setNombre("jorge");
 		try{
 			temaDao.eliminar(tema);
 			System.out.println("Tema eliminado exitosamente: " + tema.getNombre());

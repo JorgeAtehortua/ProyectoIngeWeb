@@ -10,10 +10,12 @@ import org.apache.log4j.Logger;
 
 
 
+
 import com.amhable.dominio.CategoriaDto;
 import com.amhable.dominio.TemaDto;
 import com.amhable.exception.MyException;
 import com.amhable.logicaNegocio.TemaLN;
+import com.amhable.persistencia.CategoriaDao;
 import com.amhable.persistencia.TemaDao;
 
 /**
@@ -24,6 +26,23 @@ import com.amhable.persistencia.TemaDao;
  */
 public class TemaLNimp implements TemaLN{
 	
+	/**
+	 * 
+	 */
+	CategoriaDao categoriaDao;
+	/**
+	 * @return the categoriaDao
+	 */
+	public CategoriaDao getCategoriaDao() {
+		return categoriaDao;
+	}
+
+	/**
+	 * @param categoriaDao the categoriaDao to set
+	 */
+	public void setCategoriaDao(CategoriaDao categoriaDao) {
+		this.categoriaDao = categoriaDao;
+	}
 	/**
 	 * Objeto tipo TemaDto con el que se manejaran los datos de un tema
 	 */
@@ -100,14 +119,13 @@ public class TemaLNimp implements TemaLN{
 			throw new MyException("La categoria a la que pertenece el tema no puede estar vacio");
 		}
 		CategoriaDto categoria= new CategoriaDto();
-		categoria.setIdCategoria(idCategoria);
-		
-		tema=new TemaDto();
-		tema.setCategoria(categoria);
-		tema.setIdTema(idTema);
-		tema.setNombre(nombre);
 		
 		try{
+			categoria=categoriaDao.obtenerCategoria(idCategoria);
+			tema=new TemaDto();
+			tema.setCategoria(categoria);
+			tema.setIdTema(idTema);
+			tema.setNombre(nombre);
 			temaDao.guardar(tema);
 		}catch(MyException e){
 			Logger log = Logger.getLogger(this.getClass());
@@ -155,14 +173,15 @@ public class TemaLNimp implements TemaLN{
 			throw new MyException("La categoria a la que pertenece el tema no puede estar vacio");
 		}
 		CategoriaDto categoria= new CategoriaDto();
-		categoria.setIdCategoria(idCategoria);
-		tema=new TemaDto();
-		tema.setCategoria(categoria);
-		tema.setIdTema(idTema);
-		tema.setNombre(nombre);
 		
 		try{
+			categoria=categoriaDao.obtenerCategoria(idCategoria);
+			tema=new TemaDto();
+			tema.setCategoria(categoria);
+			tema.setIdTema(idTema);
+			tema.setNombre(nombre);
 			temaDao.actualizar(tema);
+
 		}catch(MyException e){
 			Logger log = Logger.getLogger(this.getClass());
 			log.error("Error actualizando tema: " + e);

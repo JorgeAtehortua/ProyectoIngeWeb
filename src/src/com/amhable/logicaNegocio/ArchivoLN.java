@@ -66,12 +66,12 @@ public interface ArchivoLN {
 	 * @param fecha del archivo a guardar
 	 * @param contrasena del archivo a guardar
 	 * @param rutaArchivo del archivo a guardar
-	 * @param categoria_idCategoria del archivo a guardar
-	 * @param tema_idTema del archivo a guardar
+	 * @param idCategoria del archivo a guardar
+	 * @param idTema del archivo a guardar
 	 * @throws MyException del archivo a guardar
 	 */
 	public void guardar(Integer idArchivo, String nombre, Date fecha, String contrasena, String rutaArchivo, 
-			CategoriaDto categoria_idCategoria, TemaDto tema_idTema)throws MyException;
+			Integer idCategoria, Integer idTema)throws MyException;
 	/**
 	 * Firma del metodo con el cual se eliminaran archivos de la base de datos.
 	 * 
@@ -87,11 +87,11 @@ public interface ArchivoLN {
 	 * @param fecha del archivo a actualizar
 	 * @param contrasena del archivo a actualizar
 	 * @param rutaArchivo del archivo a actualizar
-	 * @param categoria_idCategoria del archivo a actualizar
-	 * @param tema_idTema del archivo a actualizar
+	 * @param idCategoria del archivo a actualizar
+	 * @param idTema del archivo a actualizar
 	 * @throws MyException del archivo a actualizar
 	 */
 	public void actualizar(Integer idArchivo, String nombre, Date fecha, String contrasena, String rutaArchivo, 
-			CategoriaDto categoria_idCategoria, TemaDto tema_idTema)throws MyException;
+			Integer idCategoria, Integer idTema)throws MyException;
 
 }

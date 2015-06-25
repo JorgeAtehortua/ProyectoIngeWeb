@@ -218,11 +218,10 @@ public class ArchivoDaoImpTest {
 	@Test
 	public void testEliminar() {
 		ArchivoDto archivo=new ArchivoDto();
-		archivo.setIdArchivo(999);
-		archivo.setNombre("EjemploGuardar");
-		archivo.setFecha(new Date());
+		
 		
 		try{
+			archivo= archivoDao.obtenerArchivo(256);
 			
 			archivoDao.eliminar(archivo);			
 			System.out.println("Archivo eliminado exitosamente");

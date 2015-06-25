@@ -116,6 +116,7 @@ public class TemaDaoImp extends HibernateDaoSupport  implements TemaDao{
 			tx.commit();
 			
 		} catch(HibernateException e){
+			e.printStackTrace();
 			log.error("ERROR eliminando tema: ", e);
 			throw new MyException(e);			
 		}finally{

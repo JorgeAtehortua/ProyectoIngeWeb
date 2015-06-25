@@ -792,3 +792,1272 @@ Caused by: org.hibernate.TransactionException: Transaction not successfully star
 2015/06/24 -- 10:08:09-[Thread-0]-[INFO]-org.springframework.context.support.GenericApplicationContext-[doClose]-(862)-Closing org.springframework.context.support.GenericApplicationContext@d2cc05a: startup date [Wed Jun 24 10:08:07 COT 2015]; root of context hierarchy
 2015/06/24 -- 10:08:09-[Thread-0]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[destroy]-(225)-Closing Hibernate SessionFactory
 2015/06/24 -- 10:08:09-[Thread-0]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[close]-(927)-closing
+2015/06/24 -- 17:38:14-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getDefaultTestExecutionListenerClassNames]-(256)-Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2015/06/24 -- 17:38:14-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getTestExecutionListeners]-(182)-Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3cbbc1e0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@35fb3008, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7225790e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@54a097cc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36f6e879]
+2015/06/24 -- 17:38:14-[main]-[INFO]-org.springframework.beans.factory.xml.XmlBeanDefinitionReader-[loadBeanDefinitions]-(317)-Loading XML bean definitions from class path resource [SpringConfiguration.xml]
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.springframework.context.support.GenericApplicationContext-[prepareRefresh]-(510)-Refreshing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Wed Jun 24 17:38:15 COT 2015]; root of context hierarchy
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.springframework.jdbc.datasource.DriverManagerDataSource-[setDriverClassName]-(133)-Loaded JDBC driver: com.mysql.jdbc.Driver
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.annotations.common.Version-[<clinit>]-(37)-Hibernate Commons Annotations 3.2.0.Final
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(603)-Hibernate 3.6.10.Final
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(636)-hibernate.properties not found
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.Environment-[buildBytecodeProvider]-(814)-Bytecode provider name : javassist
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(695)-using JDK 1.4 java.sql.Timestamp handling
+2015/06/24 -- 17:38:15-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:38:15-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:38:15-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:38:15-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.ArchivoDto -> archivo
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.CategoriaDto -> categoria
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.TemaDto -> tema
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.UsuarioDto -> usuario
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.Configuration-[applyHibernateValidatorLegacyConstraintsOnDDL]-(1676)-Hibernate Validator not found: ignoring
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[buildSessionFactory]-(713)-Building new Hibernate SessionFactory
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.search.HibernateSearchEventListenerRegister-[enableHibernateSearch]-(75)-Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.connection.ConnectionProviderFactory-[initializeConnectionProviderFromConfig]-(173)-Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.dialect.Dialect-[<init>]-(136)-Using dialect: org.hibernate.dialect.MySQLDialect
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(126)-Database ->
+       name : MySQL
+    version : 5.6.24
+      major : 5
+      minor : 6
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(132)-Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.transaction.TransactionFactoryFactory-[buildTransactionFactory]-(65)-Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.transaction.TransactionManagerLookupFactory-[getTransactionManagerLookup]-(83)-No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(179)-Automatic flush during beforeCompletion(): disabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(183)-Automatic session close at end of transaction: disabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(190)-JDBC batch size: 15
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(193)-JDBC batch updates for versioned data: disabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(198)-Scrollable result sets: enabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(206)-JDBC3 getGeneratedKeys(): enabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(214)-Connection release mode: auto
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(238)-Maximum outer join fetch depth: 2
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(241)-Default batch fetch size: 1
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(245)-Generate SQL with comments: disabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(249)-Order SQL updates by primary key: disabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(253)-Order SQL inserts for batching: disabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createQueryTranslatorFactory]-(431)-Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.hql.ast.ASTQueryTranslatorFactory-[<init>]-(47)-Using ASTQueryTranslatorFactory
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(261)-Query language substitutions: {}
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(266)-JPA-QL strict compliance: disabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(271)-Second-level cache: enabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(275)-Query cache: disabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createRegionFactory]-(406)-Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(285)-Optimize cache for minimal puts: disabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(294)-Structured second-level cache entries: disabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(314)-Echoing all SQL to stdout
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(323)-Statistics: disabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(327)-Deleted entity synthetic identifier rollback: disabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(343)-Default entity-mode: pojo
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(347)-Named query checking : enabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(351)-Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[<init>]-(202)-building session factory
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@60db1c0e
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3e78b6a5
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [clob] overrides previous : org.hibernate.type.ClobType@769a1df5
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@769a1df5
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@41f69e84
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@7975d1d8
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@2438dcd
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [blob] overrides previous : org.hibernate.type.BlobType@24105dc5
+2015/06/24 -- 17:38:15-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@24105dc5
+2015/06/24 -- 17:38:16-[main]-[INFO]-org.hibernate.impl.SessionFactoryObjectFactory-[addInstance]-(105)-Not binding factory to JNDI, no JNDI name configured
+2015/06/24 -- 17:38:16-[main]-[WARN]-org.springframework.context.support.GenericApplicationContext-[refresh]-(487)-Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.amhable.ws.UsuarioWs] for bean with name 'usuarioWs' defined in class path resource [SpringConfiguration.xml]; nested exception is java.lang.ClassNotFoundException: com.amhable.ws.UsuarioWs
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1328)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:622)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:968)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:735)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.lang.ClassNotFoundException: com.amhable.ws.UsuarioWs
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:395)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1320)
+	... 38 more
+2015/06/24 -- 17:38:16-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[destroy]-(225)-Closing Hibernate SessionFactory
+2015/06/24 -- 17:38:16-[main]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[close]-(927)-closing
+2015/06/24 -- 17:38:16-[main]-[ERROR]-org.springframework.test.context.TestContextManager-[prepareTestInstance]-(215)-Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@35fb3008] to prepare test instance [com.amhable.test.TemaDaoImpTest@6af9fcb2]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:94)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.amhable.ws.UsuarioWs] for bean with name 'usuarioWs' defined in class path resource [SpringConfiguration.xml]; nested exception is java.lang.ClassNotFoundException: com.amhable.ws.UsuarioWs
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1328)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:622)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:968)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:735)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	... 25 more
+Caused by: java.lang.ClassNotFoundException: com.amhable.ws.UsuarioWs
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:395)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1320)
+	... 38 more
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getDefaultTestExecutionListenerClassNames]-(256)-Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getTestExecutionListeners]-(182)-Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3cbbc1e0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@35fb3008, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7225790e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@54a097cc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36f6e879]
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.springframework.beans.factory.xml.XmlBeanDefinitionReader-[loadBeanDefinitions]-(317)-Loading XML bean definitions from class path resource [SpringConfiguration.xml]
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.springframework.context.support.GenericApplicationContext-[prepareRefresh]-(510)-Refreshing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Wed Jun 24 17:42:53 COT 2015]; root of context hierarchy
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.springframework.jdbc.datasource.DriverManagerDataSource-[setDriverClassName]-(133)-Loaded JDBC driver: com.mysql.jdbc.Driver
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.hibernate.annotations.common.Version-[<clinit>]-(37)-Hibernate Commons Annotations 3.2.0.Final
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(603)-Hibernate 3.6.10.Final
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(636)-hibernate.properties not found
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.hibernate.cfg.Environment-[buildBytecodeProvider]-(814)-Bytecode provider name : javassist
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(695)-using JDK 1.4 java.sql.Timestamp handling
+2015/06/24 -- 17:42:53-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:42:53-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:42:53-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:42:53-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.ArchivoDto -> archivo
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.CategoriaDto -> categoria
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.TemaDto -> tema
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.UsuarioDto -> usuario
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.hibernate.cfg.Configuration-[applyHibernateValidatorLegacyConstraintsOnDDL]-(1676)-Hibernate Validator not found: ignoring
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[buildSessionFactory]-(713)-Building new Hibernate SessionFactory
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.hibernate.cfg.search.HibernateSearchEventListenerRegister-[enableHibernateSearch]-(75)-Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.hibernate.connection.ConnectionProviderFactory-[initializeConnectionProviderFromConfig]-(173)-Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015/06/24 -- 17:42:53-[main]-[INFO]-org.hibernate.dialect.Dialect-[<init>]-(136)-Using dialect: org.hibernate.dialect.MySQLDialect
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(126)-Database ->
+       name : MySQL
+    version : 5.6.24
+      major : 5
+      minor : 6
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(132)-Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.transaction.TransactionFactoryFactory-[buildTransactionFactory]-(65)-Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.transaction.TransactionManagerLookupFactory-[getTransactionManagerLookup]-(83)-No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(179)-Automatic flush during beforeCompletion(): disabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(183)-Automatic session close at end of transaction: disabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(190)-JDBC batch size: 15
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(193)-JDBC batch updates for versioned data: disabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(198)-Scrollable result sets: enabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(206)-JDBC3 getGeneratedKeys(): enabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(214)-Connection release mode: auto
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(238)-Maximum outer join fetch depth: 2
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(241)-Default batch fetch size: 1
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(245)-Generate SQL with comments: disabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(249)-Order SQL updates by primary key: disabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(253)-Order SQL inserts for batching: disabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createQueryTranslatorFactory]-(431)-Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.hql.ast.ASTQueryTranslatorFactory-[<init>]-(47)-Using ASTQueryTranslatorFactory
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(261)-Query language substitutions: {}
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(266)-JPA-QL strict compliance: disabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(271)-Second-level cache: enabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(275)-Query cache: disabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createRegionFactory]-(406)-Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(285)-Optimize cache for minimal puts: disabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(294)-Structured second-level cache entries: disabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(314)-Echoing all SQL to stdout
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(323)-Statistics: disabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(327)-Deleted entity synthetic identifier rollback: disabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(343)-Default entity-mode: pojo
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(347)-Named query checking : enabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(351)-Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[<init>]-(202)-building session factory
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [blob] overrides previous : org.hibernate.type.BlobType@1a5a4e19
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1a5a4e19
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@7068e664
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [clob] overrides previous : org.hibernate.type.ClobType@60db1c0e
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@60db1c0e
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3e78b6a5
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@769a1df5
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@41f69e84
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@7975d1d8
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.hibernate.impl.SessionFactoryObjectFactory-[addInstance]-(105)-Not binding factory to JNDI, no JNDI name configured
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[startTransaction]-(101)-Began transaction (1) for test context [DefaultTestContext@336f1079 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@2f16c6b3, testMethod = testEliminar@TemaDaoImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@34158c08 testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19e4fcac]; rollback [true]
+2015/06/24 -- 17:42:54-[main]-[WARN]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(233)-SQL Error: 1048, SQLState: 23000
+2015/06/24 -- 17:42:54-[main]-[ERROR]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(234)-Column 'Categoria_idCategoria' cannot be null
+2015/06/24 -- 17:42:54-[main]-[ERROR]-com.amhable.persistencia.implementacion.TemaDaoImp-[eliminar]-(119)-ERROR eliminando tema: 
+org.hibernate.exception.ConstraintViolationException: Could not execute JDBC batch update
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:96)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:275)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:268)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:185)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:321)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:51)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1216)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:383)
+	at org.hibernate.transaction.JDBCTransaction.commit(JDBCTransaction.java:133)
+	at com.amhable.persistencia.implementacion.TemaDaoImp.eliminar(TemaDaoImp.java:116)
+	at com.amhable.test.TemaDaoImpTest.testEliminar(TemaDaoImpTest.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.sql.BatchUpdateException: Column 'Categoria_idCategoria' cannot be null
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2054)
+	at com.mysql.jdbc.PreparedStatement.executeBatch(PreparedStatement.java:1467)
+	at org.hibernate.jdbc.BatchingBatcher.doExecuteBatch(BatchingBatcher.java:70)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:268)
+	... 38 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'Categoria_idCategoria' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1040)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2006)
+	... 41 more
+2015/06/24 -- 17:42:54-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[endTransaction]-(136)-Rolled back transaction for test context [DefaultTestContext@336f1079 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@2f16c6b3, testMethod = testEliminar@TemaDaoImpTest, testException = java.lang.AssertionError, mergedContextConfiguration = [MergedContextConfiguration@34158c08 testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2015/06/24 -- 17:42:54-[Thread-0]-[INFO]-org.springframework.context.support.GenericApplicationContext-[doClose]-(862)-Closing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Wed Jun 24 17:42:53 COT 2015]; root of context hierarchy
+2015/06/24 -- 17:42:54-[Thread-0]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[destroy]-(225)-Closing Hibernate SessionFactory
+2015/06/24 -- 17:42:54-[Thread-0]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[close]-(927)-closing
+2015/06/24 -- 17:43:55-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getDefaultTestExecutionListenerClassNames]-(256)-Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2015/06/24 -- 17:43:55-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getTestExecutionListeners]-(182)-Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3cbbc1e0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@35fb3008, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7225790e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@54a097cc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36f6e879]
+2015/06/24 -- 17:43:55-[main]-[INFO]-org.springframework.beans.factory.xml.XmlBeanDefinitionReader-[loadBeanDefinitions]-(317)-Loading XML bean definitions from class path resource [SpringConfiguration.xml]
+2015/06/24 -- 17:43:55-[main]-[INFO]-org.springframework.context.support.GenericApplicationContext-[prepareRefresh]-(510)-Refreshing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Wed Jun 24 17:43:55 COT 2015]; root of context hierarchy
+2015/06/24 -- 17:43:55-[main]-[INFO]-org.springframework.jdbc.datasource.DriverManagerDataSource-[setDriverClassName]-(133)-Loaded JDBC driver: com.mysql.jdbc.Driver
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.annotations.common.Version-[<clinit>]-(37)-Hibernate Commons Annotations 3.2.0.Final
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(603)-Hibernate 3.6.10.Final
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(636)-hibernate.properties not found
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.Environment-[buildBytecodeProvider]-(814)-Bytecode provider name : javassist
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(695)-using JDK 1.4 java.sql.Timestamp handling
+2015/06/24 -- 17:43:56-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:43:56-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:43:56-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:43:56-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.ArchivoDto -> archivo
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.CategoriaDto -> categoria
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.TemaDto -> tema
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.UsuarioDto -> usuario
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.Configuration-[applyHibernateValidatorLegacyConstraintsOnDDL]-(1676)-Hibernate Validator not found: ignoring
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[buildSessionFactory]-(713)-Building new Hibernate SessionFactory
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.search.HibernateSearchEventListenerRegister-[enableHibernateSearch]-(75)-Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.connection.ConnectionProviderFactory-[initializeConnectionProviderFromConfig]-(173)-Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.dialect.Dialect-[<init>]-(136)-Using dialect: org.hibernate.dialect.MySQLDialect
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(126)-Database ->
+       name : MySQL
+    version : 5.6.24
+      major : 5
+      minor : 6
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(132)-Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.transaction.TransactionFactoryFactory-[buildTransactionFactory]-(65)-Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.transaction.TransactionManagerLookupFactory-[getTransactionManagerLookup]-(83)-No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(179)-Automatic flush during beforeCompletion(): disabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(183)-Automatic session close at end of transaction: disabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(190)-JDBC batch size: 15
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(193)-JDBC batch updates for versioned data: disabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(198)-Scrollable result sets: enabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(206)-JDBC3 getGeneratedKeys(): enabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(214)-Connection release mode: auto
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(238)-Maximum outer join fetch depth: 2
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(241)-Default batch fetch size: 1
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(245)-Generate SQL with comments: disabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(249)-Order SQL updates by primary key: disabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(253)-Order SQL inserts for batching: disabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createQueryTranslatorFactory]-(431)-Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.hql.ast.ASTQueryTranslatorFactory-[<init>]-(47)-Using ASTQueryTranslatorFactory
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(261)-Query language substitutions: {}
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(266)-JPA-QL strict compliance: disabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(271)-Second-level cache: enabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(275)-Query cache: disabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createRegionFactory]-(406)-Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(285)-Optimize cache for minimal puts: disabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(294)-Structured second-level cache entries: disabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(314)-Echoing all SQL to stdout
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(323)-Statistics: disabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(327)-Deleted entity synthetic identifier rollback: disabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(343)-Default entity-mode: pojo
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(347)-Named query checking : enabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(351)-Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[<init>]-(202)-building session factory
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [blob] overrides previous : org.hibernate.type.BlobType@1a5a4e19
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1a5a4e19
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@7068e664
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [clob] overrides previous : org.hibernate.type.ClobType@60db1c0e
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@60db1c0e
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3e78b6a5
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@769a1df5
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@41f69e84
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@7975d1d8
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.hibernate.impl.SessionFactoryObjectFactory-[addInstance]-(105)-Not binding factory to JNDI, no JNDI name configured
+2015/06/24 -- 17:43:56-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[startTransaction]-(101)-Began transaction (1) for test context [DefaultTestContext@336f1079 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@2f16c6b3, testMethod = testEliminar@TemaDaoImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@34158c08 testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19e4fcac]; rollback [true]
+2015/06/24 -- 17:43:56-[main]-[WARN]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(233)-SQL Error: 1048, SQLState: 23000
+2015/06/24 -- 17:43:56-[main]-[ERROR]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(234)-Column 'Categoria_idCategoria' cannot be null
+2015/06/24 -- 17:43:56-[main]-[ERROR]-com.amhable.persistencia.implementacion.TemaDaoImp-[eliminar]-(119)-ERROR eliminando tema: 
+org.hibernate.exception.ConstraintViolationException: Could not execute JDBC batch update
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:96)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:275)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:268)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:185)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:321)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:51)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1216)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:383)
+	at org.hibernate.transaction.JDBCTransaction.commit(JDBCTransaction.java:133)
+	at com.amhable.persistencia.implementacion.TemaDaoImp.eliminar(TemaDaoImp.java:116)
+	at com.amhable.test.TemaDaoImpTest.testEliminar(TemaDaoImpTest.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.sql.BatchUpdateException: Column 'Categoria_idCategoria' cannot be null
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2054)
+	at com.mysql.jdbc.PreparedStatement.executeBatch(PreparedStatement.java:1467)
+	at org.hibernate.jdbc.BatchingBatcher.doExecuteBatch(BatchingBatcher.java:70)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:268)
+	... 38 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'Categoria_idCategoria' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1040)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2006)
+	... 41 more
+2015/06/24 -- 17:43:57-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[endTransaction]-(136)-Rolled back transaction for test context [DefaultTestContext@336f1079 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@2f16c6b3, testMethod = testEliminar@TemaDaoImpTest, testException = java.lang.AssertionError, mergedContextConfiguration = [MergedContextConfiguration@34158c08 testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2015/06/24 -- 17:43:57-[Thread-0]-[INFO]-org.springframework.context.support.GenericApplicationContext-[doClose]-(862)-Closing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Wed Jun 24 17:43:55 COT 2015]; root of context hierarchy
+2015/06/24 -- 17:43:57-[Thread-0]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[destroy]-(225)-Closing Hibernate SessionFactory
+2015/06/24 -- 17:43:57-[Thread-0]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[close]-(927)-closing
+2015/06/24 -- 17:45:58-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getDefaultTestExecutionListenerClassNames]-(256)-Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2015/06/24 -- 17:45:58-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getTestExecutionListeners]-(182)-Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3cbbc1e0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@35fb3008, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7225790e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@54a097cc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36f6e879]
+2015/06/24 -- 17:45:58-[main]-[INFO]-org.springframework.beans.factory.xml.XmlBeanDefinitionReader-[loadBeanDefinitions]-(317)-Loading XML bean definitions from class path resource [SpringConfiguration.xml]
+2015/06/24 -- 17:45:58-[main]-[INFO]-org.springframework.context.support.GenericApplicationContext-[prepareRefresh]-(510)-Refreshing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Wed Jun 24 17:45:58 COT 2015]; root of context hierarchy
+2015/06/24 -- 17:45:58-[main]-[INFO]-org.springframework.jdbc.datasource.DriverManagerDataSource-[setDriverClassName]-(133)-Loaded JDBC driver: com.mysql.jdbc.Driver
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.annotations.common.Version-[<clinit>]-(37)-Hibernate Commons Annotations 3.2.0.Final
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(603)-Hibernate 3.6.10.Final
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(636)-hibernate.properties not found
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.Environment-[buildBytecodeProvider]-(814)-Bytecode provider name : javassist
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(695)-using JDK 1.4 java.sql.Timestamp handling
+2015/06/24 -- 17:45:59-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:45:59-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:45:59-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:45:59-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.ArchivoDto -> archivo
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.CategoriaDto -> categoria
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.TemaDto -> tema
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.UsuarioDto -> usuario
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.Configuration-[applyHibernateValidatorLegacyConstraintsOnDDL]-(1676)-Hibernate Validator not found: ignoring
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[buildSessionFactory]-(713)-Building new Hibernate SessionFactory
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.search.HibernateSearchEventListenerRegister-[enableHibernateSearch]-(75)-Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.connection.ConnectionProviderFactory-[initializeConnectionProviderFromConfig]-(173)-Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.dialect.Dialect-[<init>]-(136)-Using dialect: org.hibernate.dialect.MySQLDialect
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(126)-Database ->
+       name : MySQL
+    version : 5.6.24
+      major : 5
+      minor : 6
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(132)-Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.transaction.TransactionFactoryFactory-[buildTransactionFactory]-(65)-Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.transaction.TransactionManagerLookupFactory-[getTransactionManagerLookup]-(83)-No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(179)-Automatic flush during beforeCompletion(): disabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(183)-Automatic session close at end of transaction: disabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(190)-JDBC batch size: 15
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(193)-JDBC batch updates for versioned data: disabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(198)-Scrollable result sets: enabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(206)-JDBC3 getGeneratedKeys(): enabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(214)-Connection release mode: auto
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(238)-Maximum outer join fetch depth: 2
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(241)-Default batch fetch size: 1
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(245)-Generate SQL with comments: disabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(249)-Order SQL updates by primary key: disabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(253)-Order SQL inserts for batching: disabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createQueryTranslatorFactory]-(431)-Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.hql.ast.ASTQueryTranslatorFactory-[<init>]-(47)-Using ASTQueryTranslatorFactory
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(261)-Query language substitutions: {}
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(266)-JPA-QL strict compliance: disabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(271)-Second-level cache: enabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(275)-Query cache: disabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createRegionFactory]-(406)-Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(285)-Optimize cache for minimal puts: disabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(294)-Structured second-level cache entries: disabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(314)-Echoing all SQL to stdout
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(323)-Statistics: disabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(327)-Deleted entity synthetic identifier rollback: disabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(343)-Default entity-mode: pojo
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(347)-Named query checking : enabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(351)-Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[<init>]-(202)-building session factory
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [blob] overrides previous : org.hibernate.type.BlobType@1a5a4e19
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1a5a4e19
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@7068e664
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [clob] overrides previous : org.hibernate.type.ClobType@60db1c0e
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@60db1c0e
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@3e78b6a5
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@769a1df5
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@41f69e84
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@7975d1d8
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.hibernate.impl.SessionFactoryObjectFactory-[addInstance]-(105)-Not binding factory to JNDI, no JNDI name configured
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[startTransaction]-(101)-Began transaction (1) for test context [DefaultTestContext@336f1079 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@2f16c6b3, testMethod = testEliminar@TemaDaoImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@34158c08 testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@19e4fcac]; rollback [true]
+2015/06/24 -- 17:45:59-[main]-[WARN]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(233)-SQL Error: 1048, SQLState: 23000
+2015/06/24 -- 17:45:59-[main]-[ERROR]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(234)-Column 'Categoria_idCategoria' cannot be null
+2015/06/24 -- 17:45:59-[main]-[ERROR]-com.amhable.persistencia.implementacion.TemaDaoImp-[eliminar]-(120)-ERROR eliminando tema: 
+org.hibernate.exception.ConstraintViolationException: Could not execute JDBC batch update
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:96)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:275)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:268)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:185)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:321)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:51)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1216)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:383)
+	at org.hibernate.transaction.JDBCTransaction.commit(JDBCTransaction.java:133)
+	at com.amhable.persistencia.implementacion.TemaDaoImp.eliminar(TemaDaoImp.java:116)
+	at com.amhable.test.TemaDaoImpTest.testEliminar(TemaDaoImpTest.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.sql.BatchUpdateException: Column 'Categoria_idCategoria' cannot be null
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2054)
+	at com.mysql.jdbc.PreparedStatement.executeBatch(PreparedStatement.java:1467)
+	at org.hibernate.jdbc.BatchingBatcher.doExecuteBatch(BatchingBatcher.java:70)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:268)
+	... 38 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'Categoria_idCategoria' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1040)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2006)
+	... 41 more
+2015/06/24 -- 17:45:59-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[endTransaction]-(136)-Rolled back transaction for test context [DefaultTestContext@336f1079 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@2f16c6b3, testMethod = testEliminar@TemaDaoImpTest, testException = java.lang.AssertionError, mergedContextConfiguration = [MergedContextConfiguration@34158c08 testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2015/06/24 -- 17:45:59-[Thread-0]-[INFO]-org.springframework.context.support.GenericApplicationContext-[doClose]-(862)-Closing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Wed Jun 24 17:45:58 COT 2015]; root of context hierarchy
+2015/06/24 -- 17:45:59-[Thread-0]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[destroy]-(225)-Closing Hibernate SessionFactory
+2015/06/24 -- 17:45:59-[Thread-0]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[close]-(927)-closing
+2015/06/24 -- 17:57:44-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getDefaultTestExecutionListenerClassNames]-(256)-Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2015/06/24 -- 17:57:44-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getTestExecutionListeners]-(182)-Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3a03464, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2d3fcdbd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@617c74e5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6537cf78, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@67b6d4ae]
+2015/06/24 -- 17:57:44-[main]-[INFO]-org.springframework.beans.factory.xml.XmlBeanDefinitionReader-[loadBeanDefinitions]-(317)-Loading XML bean definitions from class path resource [SpringConfiguration.xml]
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.springframework.context.support.GenericApplicationContext-[prepareRefresh]-(510)-Refreshing org.springframework.context.support.GenericApplicationContext@58651fd0: startup date [Wed Jun 24 17:57:45 COT 2015]; root of context hierarchy
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.springframework.jdbc.datasource.DriverManagerDataSource-[setDriverClassName]-(133)-Loaded JDBC driver: com.mysql.jdbc.Driver
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.annotations.common.Version-[<clinit>]-(37)-Hibernate Commons Annotations 3.2.0.Final
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(603)-Hibernate 3.6.10.Final
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(636)-hibernate.properties not found
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.Environment-[buildBytecodeProvider]-(814)-Bytecode provider name : javassist
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(695)-using JDK 1.4 java.sql.Timestamp handling
+2015/06/24 -- 17:57:45-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:57:45-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:57:45-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:57:45-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.ArchivoDto -> archivo
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.CategoriaDto -> categoria
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.TemaDto -> tema
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.UsuarioDto -> usuario
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.Configuration-[applyHibernateValidatorLegacyConstraintsOnDDL]-(1676)-Hibernate Validator not found: ignoring
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[buildSessionFactory]-(713)-Building new Hibernate SessionFactory
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.search.HibernateSearchEventListenerRegister-[enableHibernateSearch]-(75)-Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.connection.ConnectionProviderFactory-[initializeConnectionProviderFromConfig]-(173)-Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.dialect.Dialect-[<init>]-(136)-Using dialect: org.hibernate.dialect.MySQLDialect
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(126)-Database ->
+       name : MySQL
+    version : 5.6.24
+      major : 5
+      minor : 6
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(132)-Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.transaction.TransactionFactoryFactory-[buildTransactionFactory]-(65)-Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.transaction.TransactionManagerLookupFactory-[getTransactionManagerLookup]-(83)-No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(179)-Automatic flush during beforeCompletion(): disabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(183)-Automatic session close at end of transaction: disabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(190)-JDBC batch size: 15
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(193)-JDBC batch updates for versioned data: disabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(198)-Scrollable result sets: enabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(206)-JDBC3 getGeneratedKeys(): enabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(214)-Connection release mode: auto
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(238)-Maximum outer join fetch depth: 2
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(241)-Default batch fetch size: 1
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(245)-Generate SQL with comments: disabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(249)-Order SQL updates by primary key: disabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(253)-Order SQL inserts for batching: disabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createQueryTranslatorFactory]-(431)-Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.hql.ast.ASTQueryTranslatorFactory-[<init>]-(47)-Using ASTQueryTranslatorFactory
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(261)-Query language substitutions: {}
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(266)-JPA-QL strict compliance: disabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(271)-Second-level cache: enabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(275)-Query cache: disabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createRegionFactory]-(406)-Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(285)-Optimize cache for minimal puts: disabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(294)-Structured second-level cache entries: disabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(314)-Echoing all SQL to stdout
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(323)-Statistics: disabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(327)-Deleted entity synthetic identifier rollback: disabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(343)-Default entity-mode: pojo
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(347)-Named query checking : enabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(351)-Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[<init>]-(202)-building session factory
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@36804139
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [blob] overrides previous : org.hibernate.type.BlobType@20bd8be5
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@20bd8be5
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [clob] overrides previous : org.hibernate.type.ClobType@730d2164
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@730d2164
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@24959ca4
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@10289886
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@5c86dbc5
+2015/06/24 -- 17:57:45-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@461ad730
+2015/06/24 -- 17:57:46-[main]-[INFO]-org.hibernate.impl.SessionFactoryObjectFactory-[addInstance]-(105)-Not binding factory to JNDI, no JNDI name configured
+2015/06/24 -- 17:57:46-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[startTransaction]-(101)-Began transaction (1) for test context [DefaultTestContext@29ca3d04 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@b2c5e07, testMethod = testObtenerTema@TemaDaoImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5812f68b testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@4426bff1]; rollback [true]
+2015/06/24 -- 17:57:46-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[endTransaction]-(136)-Rolled back transaction for test context [DefaultTestContext@29ca3d04 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@b2c5e07, testMethod = testObtenerTema@TemaDaoImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5812f68b testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2015/06/24 -- 17:57:46-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[startTransaction]-(101)-Began transaction (1) for test context [DefaultTestContext@29ca3d04 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@34a875b3, testMethod = testObtener@TemaDaoImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5812f68b testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@4426bff1]; rollback [true]
+2015/06/24 -- 17:57:46-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[endTransaction]-(136)-Rolled back transaction for test context [DefaultTestContext@29ca3d04 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@34a875b3, testMethod = testObtener@TemaDaoImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5812f68b testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2015/06/24 -- 17:57:46-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[startTransaction]-(101)-Began transaction (1) for test context [DefaultTestContext@29ca3d04 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@331acdad, testMethod = testActualizar@TemaDaoImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5812f68b testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@4426bff1]; rollback [true]
+2015/06/24 -- 17:57:46-[main]-[WARN]-org.springframework.test.context.TestContextManager-[afterTestMethod]-(300)-Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@6537cf78] to process 'after' execution for test: method [public void com.amhable.test.TemaDaoImpTest.testActualizar()], instance [com.amhable.test.TemaDaoImpTest@331acdad], exception [null]
+org.springframework.transaction.TransactionSystemException: Could not roll back Hibernate transaction; nested exception is org.hibernate.TransactionException: Transaction not successfully started
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doRollback(HibernateTransactionManager.java:685)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:849)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:826)
+	at org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:125)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:224)
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:297)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:90)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.hibernate.TransactionException: Transaction not successfully started
+	at org.hibernate.transaction.JDBCTransaction.rollback(JDBCTransaction.java:179)
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doRollback(HibernateTransactionManager.java:682)
+	... 25 more
+2015/06/24 -- 17:57:46-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[startTransaction]-(101)-Began transaction (1) for test context [DefaultTestContext@29ca3d04 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@16c63f5, testMethod = testGuardar@TemaDaoImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5812f68b testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@4426bff1]; rollback [true]
+2015/06/24 -- 17:57:46-[main]-[WARN]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(233)-SQL Error: 1048, SQLState: 23000
+2015/06/24 -- 17:57:46-[main]-[ERROR]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(234)-Column 'Categoria_idCategoria' cannot be null
+2015/06/24 -- 17:57:46-[main]-[ERROR]-com.amhable.persistencia.implementacion.TemaDaoImp-[guardar]-(93)-ERROR guardando tema: 
+org.hibernate.exception.ConstraintViolationException: Could not execute JDBC batch update
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:96)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:275)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:268)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:184)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:321)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:51)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1216)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:383)
+	at org.hibernate.transaction.JDBCTransaction.commit(JDBCTransaction.java:133)
+	at com.amhable.persistencia.implementacion.TemaDaoImp.guardar(TemaDaoImp.java:90)
+	at com.amhable.test.TemaDaoImpTest.testGuardar(TemaDaoImpTest.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.sql.BatchUpdateException: Column 'Categoria_idCategoria' cannot be null
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2054)
+	at com.mysql.jdbc.PreparedStatement.executeBatch(PreparedStatement.java:1467)
+	at org.hibernate.jdbc.BatchingBatcher.doExecuteBatch(BatchingBatcher.java:70)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:268)
+	... 38 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'Categoria_idCategoria' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1040)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2006)
+	... 41 more
+2015/06/24 -- 17:57:46-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[endTransaction]-(136)-Rolled back transaction for test context [DefaultTestContext@29ca3d04 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@16c63f5, testMethod = testGuardar@TemaDaoImpTest, testException = java.lang.AssertionError, mergedContextConfiguration = [MergedContextConfiguration@5812f68b testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2015/06/24 -- 17:57:46-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[startTransaction]-(101)-Began transaction (1) for test context [DefaultTestContext@29ca3d04 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@2d6764b2, testMethod = testEliminar@TemaDaoImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5812f68b testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@4426bff1]; rollback [true]
+2015/06/24 -- 17:57:46-[main]-[WARN]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(233)-SQL Error: 1048, SQLState: 23000
+2015/06/24 -- 17:57:46-[main]-[ERROR]-org.hibernate.util.JDBCExceptionReporter-[logExceptions]-(234)-Column 'Categoria_idCategoria' cannot be null
+2015/06/24 -- 17:57:46-[main]-[ERROR]-com.amhable.persistencia.implementacion.TemaDaoImp-[eliminar]-(120)-ERROR eliminando tema: 
+org.hibernate.exception.ConstraintViolationException: Could not execute JDBC batch update
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:96)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:275)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:268)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:185)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:321)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:51)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1216)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:383)
+	at org.hibernate.transaction.JDBCTransaction.commit(JDBCTransaction.java:133)
+	at com.amhable.persistencia.implementacion.TemaDaoImp.eliminar(TemaDaoImp.java:116)
+	at com.amhable.test.TemaDaoImpTest.testEliminar(TemaDaoImpTest.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.sql.BatchUpdateException: Column 'Categoria_idCategoria' cannot be null
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2054)
+	at com.mysql.jdbc.PreparedStatement.executeBatch(PreparedStatement.java:1467)
+	at org.hibernate.jdbc.BatchingBatcher.doExecuteBatch(BatchingBatcher.java:70)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:268)
+	... 38 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'Categoria_idCategoria' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1040)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4096)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4028)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2490)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2651)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2734)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeBatchSerially(PreparedStatement.java:2006)
+	... 41 more
+2015/06/24 -- 17:57:46-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[endTransaction]-(136)-Rolled back transaction for test context [DefaultTestContext@29ca3d04 testClass = TemaDaoImpTest, testInstance = com.amhable.test.TemaDaoImpTest@2d6764b2, testMethod = testEliminar@TemaDaoImpTest, testException = java.lang.AssertionError, mergedContextConfiguration = [MergedContextConfiguration@5812f68b testClass = TemaDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2015/06/24 -- 17:57:46-[Thread-0]-[INFO]-org.springframework.context.support.GenericApplicationContext-[doClose]-(862)-Closing org.springframework.context.support.GenericApplicationContext@58651fd0: startup date [Wed Jun 24 17:57:45 COT 2015]; root of context hierarchy
+2015/06/24 -- 17:57:46-[Thread-0]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[destroy]-(225)-Closing Hibernate SessionFactory
+2015/06/24 -- 17:57:46-[Thread-0]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[close]-(927)-closing
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getDefaultTestExecutionListenerClassNames]-(256)-Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getTestExecutionListeners]-(182)-Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3cbbc1e0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@35fb3008, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7225790e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@54a097cc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36f6e879]
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.springframework.beans.factory.xml.XmlBeanDefinitionReader-[loadBeanDefinitions]-(317)-Loading XML bean definitions from class path resource [SpringConfiguration.xml]
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.springframework.context.support.GenericApplicationContext-[prepareRefresh]-(510)-Refreshing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Wed Jun 24 18:59:58 COT 2015]; root of context hierarchy
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.springframework.jdbc.datasource.DriverManagerDataSource-[setDriverClassName]-(133)-Loaded JDBC driver: com.mysql.jdbc.Driver
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.hibernate.annotations.common.Version-[<clinit>]-(37)-Hibernate Commons Annotations 3.2.0.Final
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(603)-Hibernate 3.6.10.Final
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(636)-hibernate.properties not found
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.hibernate.cfg.Environment-[buildBytecodeProvider]-(814)-Bytecode provider name : javassist
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(695)-using JDK 1.4 java.sql.Timestamp handling
+2015/06/24 -- 18:59:58-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 18:59:58-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 18:59:58-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 18:59:58-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.ArchivoDto -> archivo
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.CategoriaDto -> categoria
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.TemaDto -> tema
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.UsuarioDto -> usuario
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.hibernate.cfg.Configuration-[applyHibernateValidatorLegacyConstraintsOnDDL]-(1676)-Hibernate Validator not found: ignoring
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[buildSessionFactory]-(713)-Building new Hibernate SessionFactory
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.hibernate.cfg.search.HibernateSearchEventListenerRegister-[enableHibernateSearch]-(75)-Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015/06/24 -- 18:59:58-[main]-[INFO]-org.hibernate.connection.ConnectionProviderFactory-[initializeConnectionProviderFromConfig]-(173)-Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.dialect.Dialect-[<init>]-(136)-Using dialect: org.hibernate.dialect.MySQLDialect
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(126)-Database ->
+       name : MySQL
+    version : 5.6.24
+      major : 5
+      minor : 6
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(132)-Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.transaction.TransactionFactoryFactory-[buildTransactionFactory]-(65)-Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.transaction.TransactionManagerLookupFactory-[getTransactionManagerLookup]-(83)-No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(179)-Automatic flush during beforeCompletion(): disabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(183)-Automatic session close at end of transaction: disabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(190)-JDBC batch size: 15
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(193)-JDBC batch updates for versioned data: disabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(198)-Scrollable result sets: enabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(206)-JDBC3 getGeneratedKeys(): enabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(214)-Connection release mode: auto
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(238)-Maximum outer join fetch depth: 2
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(241)-Default batch fetch size: 1
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(245)-Generate SQL with comments: disabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(249)-Order SQL updates by primary key: disabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(253)-Order SQL inserts for batching: disabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createQueryTranslatorFactory]-(431)-Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.hql.ast.ASTQueryTranslatorFactory-[<init>]-(47)-Using ASTQueryTranslatorFactory
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(261)-Query language substitutions: {}
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(266)-JPA-QL strict compliance: disabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(271)-Second-level cache: enabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(275)-Query cache: disabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createRegionFactory]-(406)-Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(285)-Optimize cache for minimal puts: disabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(294)-Structured second-level cache entries: disabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(314)-Echoing all SQL to stdout
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(323)-Statistics: disabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(327)-Deleted entity synthetic identifier rollback: disabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(343)-Default entity-mode: pojo
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(347)-Named query checking : enabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(351)-Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[<init>]-(202)-building session factory
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@3e78b6a5
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@769a1df5
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@41f69e84
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [blob] overrides previous : org.hibernate.type.BlobType@7975d1d8
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@7975d1d8
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [clob] overrides previous : org.hibernate.type.ClobType@2438dcd
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@2438dcd
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@24105dc5
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@5167f57d
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.impl.SessionFactoryObjectFactory-[addInstance]-(105)-Not binding factory to JNDI, no JNDI name configured
+2015/06/24 -- 18:59:59-[main]-[WARN]-org.springframework.context.support.GenericApplicationContext-[refresh]-(487)-Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.amhable.ws.UsuarioWs] for bean with name 'usuarioWs' defined in class path resource [SpringConfiguration.xml]; nested exception is java.lang.ClassNotFoundException: com.amhable.ws.UsuarioWs
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1328)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:622)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:968)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:735)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.lang.ClassNotFoundException: com.amhable.ws.UsuarioWs
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:395)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1320)
+	... 38 more
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[destroy]-(225)-Closing Hibernate SessionFactory
+2015/06/24 -- 18:59:59-[main]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[close]-(927)-closing
+2015/06/24 -- 18:59:59-[main]-[ERROR]-org.springframework.test.context.TestContextManager-[prepareTestInstance]-(215)-Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@35fb3008] to prepare test instance [com.amhable.test.ArchivoDaoImpTest@ca30bc1]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:94)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.amhable.ws.UsuarioWs] for bean with name 'usuarioWs' defined in class path resource [SpringConfiguration.xml]; nested exception is java.lang.ClassNotFoundException: com.amhable.ws.UsuarioWs
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1328)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:622)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:591)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:968)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:735)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	... 25 more
+Caused by: java.lang.ClassNotFoundException: com.amhable.ws.UsuarioWs
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:249)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:395)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1320)
+	... 38 more
+2015/06/24 -- 19:00:28-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getDefaultTestExecutionListenerClassNames]-(256)-Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2015/06/24 -- 19:00:28-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getTestExecutionListeners]-(182)-Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3cbbc1e0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@35fb3008, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7225790e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@54a097cc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36f6e879]
+2015/06/24 -- 19:00:28-[main]-[INFO]-org.springframework.beans.factory.xml.XmlBeanDefinitionReader-[loadBeanDefinitions]-(317)-Loading XML bean definitions from class path resource [SpringConfiguration.xml]
+2015/06/24 -- 19:00:28-[main]-[INFO]-org.springframework.context.support.GenericApplicationContext-[prepareRefresh]-(510)-Refreshing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Wed Jun 24 19:00:28 COT 2015]; root of context hierarchy
+2015/06/24 -- 19:00:28-[main]-[INFO]-org.springframework.jdbc.datasource.DriverManagerDataSource-[setDriverClassName]-(133)-Loaded JDBC driver: com.mysql.jdbc.Driver
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.annotations.common.Version-[<clinit>]-(37)-Hibernate Commons Annotations 3.2.0.Final
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(603)-Hibernate 3.6.10.Final
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(636)-hibernate.properties not found
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.Environment-[buildBytecodeProvider]-(814)-Bytecode provider name : javassist
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(695)-using JDK 1.4 java.sql.Timestamp handling
+2015/06/24 -- 19:00:29-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 19:00:29-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 19:00:29-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 19:00:29-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.ArchivoDto -> archivo
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.CategoriaDto -> categoria
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.TemaDto -> tema
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.UsuarioDto -> usuario
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.Configuration-[applyHibernateValidatorLegacyConstraintsOnDDL]-(1676)-Hibernate Validator not found: ignoring
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[buildSessionFactory]-(713)-Building new Hibernate SessionFactory
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.search.HibernateSearchEventListenerRegister-[enableHibernateSearch]-(75)-Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.connection.ConnectionProviderFactory-[initializeConnectionProviderFromConfig]-(173)-Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.dialect.Dialect-[<init>]-(136)-Using dialect: org.hibernate.dialect.MySQLDialect
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(126)-Database ->
+       name : MySQL
+    version : 5.6.24
+      major : 5
+      minor : 6
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(132)-Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.transaction.TransactionFactoryFactory-[buildTransactionFactory]-(65)-Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.transaction.TransactionManagerLookupFactory-[getTransactionManagerLookup]-(83)-No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(179)-Automatic flush during beforeCompletion(): disabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(183)-Automatic session close at end of transaction: disabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(190)-JDBC batch size: 15
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(193)-JDBC batch updates for versioned data: disabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(198)-Scrollable result sets: enabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(206)-JDBC3 getGeneratedKeys(): enabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(214)-Connection release mode: auto
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(238)-Maximum outer join fetch depth: 2
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(241)-Default batch fetch size: 1
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(245)-Generate SQL with comments: disabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(249)-Order SQL updates by primary key: disabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(253)-Order SQL inserts for batching: disabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createQueryTranslatorFactory]-(431)-Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.hql.ast.ASTQueryTranslatorFactory-[<init>]-(47)-Using ASTQueryTranslatorFactory
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(261)-Query language substitutions: {}
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(266)-JPA-QL strict compliance: disabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(271)-Second-level cache: enabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(275)-Query cache: disabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createRegionFactory]-(406)-Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(285)-Optimize cache for minimal puts: disabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(294)-Structured second-level cache entries: disabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(314)-Echoing all SQL to stdout
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(323)-Statistics: disabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(327)-Deleted entity synthetic identifier rollback: disabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(343)-Default entity-mode: pojo
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(347)-Named query checking : enabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(351)-Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[<init>]-(202)-building session factory
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@7068e664
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@60db1c0e
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@3e78b6a5
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@769a1df5
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [blob] overrides previous : org.hibernate.type.BlobType@41f69e84
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@41f69e84
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [clob] overrides previous : org.hibernate.type.ClobType@7975d1d8
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@7975d1d8
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@2438dcd
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.hibernate.impl.SessionFactoryObjectFactory-[addInstance]-(105)-Not binding factory to JNDI, no JNDI name configured
+2015/06/24 -- 19:00:29-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[startTransaction]-(101)-Began transaction (1) for test context [DefaultTestContext@19e4fcac testClass = ArchivoDaoImpTest, testInstance = com.amhable.test.ArchivoDaoImpTest@52c3cb31, testMethod = testActualizar@ArchivoDaoImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4b79ac84 testClass = ArchivoDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@53941c2f]; rollback [true]
+2015/06/24 -- 19:00:30-[main]-[WARN]-org.springframework.test.context.TestContextManager-[afterTestMethod]-(300)-Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@54a097cc] to process 'after' execution for test: method [public void com.amhable.test.ArchivoDaoImpTest.testActualizar()], instance [com.amhable.test.ArchivoDaoImpTest@52c3cb31], exception [null]
+org.springframework.transaction.TransactionSystemException: Could not roll back Hibernate transaction; nested exception is org.hibernate.TransactionException: Transaction not successfully started
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doRollback(HibernateTransactionManager.java:685)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:849)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:826)
+	at org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:125)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:224)
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:297)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:90)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.hibernate.TransactionException: Transaction not successfully started
+	at org.hibernate.transaction.JDBCTransaction.rollback(JDBCTransaction.java:179)
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doRollback(HibernateTransactionManager.java:682)
+	... 25 more
+2015/06/24 -- 19:00:30-[Thread-0]-[INFO]-org.springframework.context.support.GenericApplicationContext-[doClose]-(862)-Closing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Wed Jun 24 19:00:28 COT 2015]; root of context hierarchy
+2015/06/24 -- 19:00:30-[Thread-0]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[destroy]-(225)-Closing Hibernate SessionFactory
+2015/06/24 -- 19:00:30-[Thread-0]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[close]-(927)-closing
+2015/06/24 -- 19:25:38-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getDefaultTestExecutionListenerClassNames]-(256)-Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2015/06/24 -- 19:25:38-[main]-[INFO]-org.springframework.test.context.support.DefaultTestContextBootstrapper-[getTestExecutionListeners]-(182)-Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3cbbc1e0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@35fb3008, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7225790e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@54a097cc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36f6e879]
+2015/06/24 -- 19:25:38-[main]-[INFO]-org.springframework.beans.factory.xml.XmlBeanDefinitionReader-[loadBeanDefinitions]-(317)-Loading XML bean definitions from class path resource [SpringConfiguration.xml]
+2015/06/24 -- 19:25:38-[main]-[INFO]-org.springframework.context.support.GenericApplicationContext-[prepareRefresh]-(510)-Refreshing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Wed Jun 24 19:25:38 COT 2015]; root of context hierarchy
+2015/06/24 -- 19:25:38-[main]-[INFO]-org.springframework.jdbc.datasource.DriverManagerDataSource-[setDriverClassName]-(133)-Loaded JDBC driver: com.mysql.jdbc.Driver
+2015/06/24 -- 19:25:38-[main]-[INFO]-org.hibernate.annotations.common.Version-[<clinit>]-(37)-Hibernate Commons Annotations 3.2.0.Final
+2015/06/24 -- 19:25:38-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(603)-Hibernate 3.6.10.Final
+2015/06/24 -- 19:25:38-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(636)-hibernate.properties not found
+2015/06/24 -- 19:25:38-[main]-[INFO]-org.hibernate.cfg.Environment-[buildBytecodeProvider]-(814)-Bytecode provider name : javassist
+2015/06/24 -- 19:25:38-[main]-[INFO]-org.hibernate.cfg.Environment-[<clinit>]-(695)-using JDK 1.4 java.sql.Timestamp handling
+2015/06/24 -- 19:25:39-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 19:25:39-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 19:25:39-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 19:25:39-[main]-[WARN]-org.hibernate.util.DTDEntityResolver-[resolveEntity]-(73)-recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.ArchivoDto -> archivo
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.CategoriaDto -> categoria
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.TemaDto -> tema
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.HbmBinder-[bindRootPersistentClassCommonValues]-(353)-Mapping class: com.amhable.dominio.UsuarioDto -> usuario
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.Configuration-[applyHibernateValidatorLegacyConstraintsOnDDL]-(1676)-Hibernate Validator not found: ignoring
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[buildSessionFactory]-(713)-Building new Hibernate SessionFactory
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.search.HibernateSearchEventListenerRegister-[enableHibernateSearch]-(75)-Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.connection.ConnectionProviderFactory-[initializeConnectionProviderFromConfig]-(173)-Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.dialect.Dialect-[<init>]-(136)-Using dialect: org.hibernate.dialect.MySQLDialect
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(126)-Database ->
+       name : MySQL
+    version : 5.6.24
+      major : 5
+      minor : 6
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(132)-Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )
+      major : 5
+      minor : 1
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.transaction.TransactionFactoryFactory-[buildTransactionFactory]-(65)-Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.transaction.TransactionManagerLookupFactory-[getTransactionManagerLookup]-(83)-No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(179)-Automatic flush during beforeCompletion(): disabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(183)-Automatic session close at end of transaction: disabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(190)-JDBC batch size: 15
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(193)-JDBC batch updates for versioned data: disabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(198)-Scrollable result sets: enabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(206)-JDBC3 getGeneratedKeys(): enabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(214)-Connection release mode: auto
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(238)-Maximum outer join fetch depth: 2
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(241)-Default batch fetch size: 1
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(245)-Generate SQL with comments: disabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(249)-Order SQL updates by primary key: disabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(253)-Order SQL inserts for batching: disabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createQueryTranslatorFactory]-(431)-Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.hql.ast.ASTQueryTranslatorFactory-[<init>]-(47)-Using ASTQueryTranslatorFactory
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(261)-Query language substitutions: {}
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(266)-JPA-QL strict compliance: disabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(271)-Second-level cache: enabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(275)-Query cache: disabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[createRegionFactory]-(406)-Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(285)-Optimize cache for minimal puts: disabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(294)-Structured second-level cache entries: disabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(314)-Echoing all SQL to stdout
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(323)-Statistics: disabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(327)-Deleted entity synthetic identifier rollback: disabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(343)-Default entity-mode: pojo
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(347)-Named query checking : enabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.cfg.SettingsFactory-[buildSettings]-(351)-Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[<init>]-(202)-building session factory
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@7068e664
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@60db1c0e
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@3e78b6a5
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@769a1df5
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [blob] overrides previous : org.hibernate.type.BlobType@41f69e84
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@41f69e84
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [clob] overrides previous : org.hibernate.type.ClobType@7975d1d8
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@7975d1d8
+2015/06/24 -- 19:25:39-[main]-[INFO]-org.hibernate.type.BasicTypeRegistry-[register]-(150)-Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@2438dcd
+2015/06/24 -- 19:25:40-[main]-[INFO]-org.hibernate.impl.SessionFactoryObjectFactory-[addInstance]-(105)-Not binding factory to JNDI, no JNDI name configured
+2015/06/24 -- 19:25:40-[main]-[INFO]-org.springframework.test.context.transaction.TransactionContext-[startTransaction]-(101)-Began transaction (1) for test context [DefaultTestContext@19e4fcac testClass = ArchivoDaoImpTest, testInstance = com.amhable.test.ArchivoDaoImpTest@52c3cb31, testMethod = testEliminar@ArchivoDaoImpTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4b79ac84 testClass = ArchivoDaoImpTest, locations = '{classpath:/SpringConfiguration.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.hibernate3.HibernateTransactionManager@53941c2f]; rollback [true]
+2015/06/24 -- 19:25:40-[main]-[WARN]-org.springframework.test.context.TestContextManager-[afterTestMethod]-(300)-Caught exception while allowing TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@54a097cc] to process 'after' execution for test: method [public void com.amhable.test.ArchivoDaoImpTest.testEliminar()], instance [com.amhable.test.ArchivoDaoImpTest@52c3cb31], exception [null]
+org.springframework.transaction.TransactionSystemException: Could not roll back Hibernate transaction; nested exception is org.hibernate.TransactionException: Transaction not successfully started
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doRollback(HibernateTransactionManager.java:685)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:849)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:826)
+	at org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:125)
+	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:224)
+	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:297)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:90)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.hibernate.TransactionException: Transaction not successfully started
+	at org.hibernate.transaction.JDBCTransaction.rollback(JDBCTransaction.java:179)
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doRollback(HibernateTransactionManager.java:682)
+	... 25 more
+2015/06/24 -- 19:25:40-[Thread-0]-[INFO]-org.springframework.context.support.GenericApplicationContext-[doClose]-(862)-Closing org.springframework.context.support.GenericApplicationContext@7c16905e: startup date [Wed Jun 24 19:25:38 COT 2015]; root of context hierarchy
+2015/06/24 -- 19:25:40-[Thread-0]-[INFO]-org.springframework.orm.hibernate3.LocalSessionFactoryBean-[destroy]-(225)-Closing Hibernate SessionFactory
+2015/06/24 -- 19:25:40-[Thread-0]-[INFO]-org.hibernate.impl.SessionFactoryImpl-[close]-(927)-closing
