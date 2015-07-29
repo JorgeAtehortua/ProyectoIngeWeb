@@ -75,8 +75,9 @@ public class UsuarioLNimp implements UsuarioLN{
 			throw new MyException("La contraseña del usuario no puede ser vacia");
 		}
 		usuario=new UsuarioDto();
-		usuario.setContrasena(contrasena);
 		usuario.setIdUsuario(idUsuario);
+		usuario.setContrasena(contrasena);
+		
 		try{
 			usuarioDao.guardar(usuario);
 		}catch(MyException e){

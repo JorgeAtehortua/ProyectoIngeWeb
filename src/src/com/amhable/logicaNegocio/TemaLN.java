@@ -34,6 +34,14 @@ public interface TemaLN {
 	public TemaDto obtenerTema(Integer idTema) throws MyException;
 	
 	/**
+	 * Firma el metodo obtenerTemasDeUnaCategoria
+	 * @param idCategoria
+	 * @return
+	 * @throws MyException
+	 */
+	public List<TemaDto> obtenerTemasDeUnaCategoria(Integer idCategoria) throws MyException;
+
+	/**
 	 * Firma del metodo guardar
 	 * 
 	 * @param identificador del tema que se va a guardar 

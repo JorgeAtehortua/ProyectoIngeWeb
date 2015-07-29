@@ -4,9 +4,12 @@
 package com.amhable.logicaNegocio.imp;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+
+
 
 
 
@@ -101,6 +104,33 @@ public class TemaLNimp implements TemaLN{
 		}
 		return tema;
 	}
+
+	/**
+	 * Metodo en la logica del negocio mediante el cual se obtienen los temas de una categoria
+	 * @param idCategoria
+	 * @return
+	 * @throws MyException
+	 */
+	public List<TemaDto> obtenerTemasDeUnaCategoria(Integer idCategoria) throws MyException{
+		List<TemaDto> temas= new ArrayList<TemaDto>();
+		List<TemaDto> temasDeLaCategoria= new ArrayList<TemaDto>();
+		try{
+			temas= temaDao.obtenerTemas();
+			Iterator<TemaDto> it= temas.iterator();
+			while(it.hasNext()){
+				TemaDto tema=it.next();
+				Integer categoria= tema.getCategoria().getIdCategoria();
+				if(categoria==idCategoria){
+					temasDeLaCategoria.add(tema);
+				}
+			}
+		}catch(MyException e){
+			Logger log=Logger.getLogger(this.getClass());
+			log.error("Error obteniendo los temas de una categoria");
+		}
+		return temasDeLaCategoria;
+	}
+
 
 	/**
 	 * Metodo en la logica del negocio mediante el cual se guarda un tema
